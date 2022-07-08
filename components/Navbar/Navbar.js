@@ -1,15 +1,24 @@
 import React from "react";
+import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.issueDiv}>
-        <div className={styles.issueText}>S1:I1</div>
+        <div className={styles.issueText}>
+          <span>S1</span>:<span>I1</span>
+        </div>
         <div className={styles.issueTitle}>"RAW"</div>
       </div>
-      <div className={styles.logoDiv}>RAW LOGO</div>
-      <div className={styles.menuDiv}>RAW MENU</div>
+      <div className={styles.logoDiv}>
+        {/* <img src="../public/raw-logo.svg" /> */}
+      </div>
+      <div className={styles.menuDiv}>
+        <button className={styles.menuButton} type="button">
+          <MenuIcon fontSize="large" />
+        </button>
+      </div>
     </div>
   );
 }

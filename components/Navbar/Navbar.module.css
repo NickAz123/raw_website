@@ -1,18 +1,50 @@
 .navbar{
-    height:80px;
+    height:60px;
+    width: 100%;
+    top: 0px;
 
+    position: fixed;
     display: flex;
+    justify-content: space-between;
+
     border-bottom: 1px solid black;
 }
 
 .issueDiv{
-    background-color: aquamarine;
+    padding-left: 5px;
+}
+
+.issueText{
+    top: 23px;
+    font-size: 10px;
+    transform: rotate(-90deg);
+
+    position:absolute;
+}
+
+.issueTitle{
+    font-size: 20px;
+    line-height: 60px;
+    padding-left: 20px;
+
+    text-align: center;
+    vertical-align:middle;
+    position: absolute;
 }
 
 .logoDiv{
-    background-color: aqua;
 }
 
 .menuDiv{
-    background-color: beige;
+    padding-right: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.menuButton{
+    text-align: center;
+    border: none;
+
+    background-color: rgba(0, 0, 0, 0);
 }
