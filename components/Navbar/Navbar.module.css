@@ -1,26 +1,80 @@
 .navbar{
-    height:60px;
+    height: 100px;
     width: 100%;
     top: 0px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
 
     position: fixed;
     display: flex;
     justify-content: space-between;
 
-    border-bottom: 1px solid black;
+    color: var(--navbarText);
+    background: linear-gradient(180deg, var(--primary) 0%, rgba(255,255,2550, 0) 100%);
 }
 
 .issueDiv{
-    padding-left: 5px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    color: var(--navbarText);
 }
 
-.issueText{
-    top: 23px;
-    font-size: 10px;
-    transform: rotate(-90deg);
+.dropdownButton {
+    border: none;
+    background: none;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 290px;
 
-    position:absolute;
+    text-align: center;
+    text-decoration: underline;
+
+    color: var(--navbarText);
+
 }
+.dropdownButton:hover {
+    background-color: white;
+    color: var(--primary);
+}
+
+
+.dropdownItems{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    top: 80%;
+    /* padding: .75rem; */
+    border-radius: 5px;
+    width: 290px;
+    
+    background-color: white;
+    color: black;
+}
+
+.dropdownItemsButton {
+    width: 100%;
+    padding-left: 25px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: none;
+    background: none;
+    text-align: left;
+    color: var(--primary);
+}
+
+.dropdownItemsButton:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
 
 .issueTitle{
     font-size: 20px;

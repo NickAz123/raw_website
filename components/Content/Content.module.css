@@ -1,3 +1,10 @@
 .contentContainer{
-    margin-top: 60px;
+    /* background-color: red; */
+    height: 100%;
+}
+
+.season1 {
+    --primary: rgba(255,0,0,1);
+    --textPrimary: white;
+    --navbarText: white;
 }
