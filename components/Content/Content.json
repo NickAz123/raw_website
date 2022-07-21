@@ -1,0 +1,35 @@
+{
+    "Season1": {
+        "season":"Season 1",
+        "logo": "",
+        "styles": "season1",
+        "Issues" : {
+            "Issue1" : {
+                "Articles": [
+                    {
+                        "title": "This is Raw",
+                        "id": 1
+                    },
+                    {
+                        "title": "Cigarette Courtesy",
+                        "id": 2
+                    },
+                    {
+                        "title": "Creative, But I'm Not",
+                        "id": 3
+                    },
+                    {
+                        "title": "I Hate Orange",
+                        "id": 4
+                    },
+                    {
+                        "title": "A Reminder About Seasons",
+                        "id": 5
+                    }
+                ]
+            }
+        }
+
+    }
+
+}

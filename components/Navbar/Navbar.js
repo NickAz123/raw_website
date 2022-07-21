@@ -13,11 +13,15 @@ function Navbar() {
     <div className={styles.navbar}>
       <div ref={ref} className={styles.issueDiv}>
         <button
-          className={styles.dropdownButton}
+          className={
+            navDisplay ? styles.dropdownButtonOpen : styles.dropdownButton
+          }
           onClick={() => setNavDisplay(!navDisplay)}
         >
           <span>SEASON 1 - </span>
-          <span>ISSUE 1</span>
+          <span>
+            <b>ISSUE 1</b>
+          </span>
         </button>
         {navDisplay === true && (
           <div className={styles.dropdownItems}>

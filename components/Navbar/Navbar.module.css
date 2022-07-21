@@ -40,6 +40,19 @@
     background-color: white;
     color: var(--primary);
 }
+.dropdownButtonOpen{
+    border: none;
+    background: none;
+    border-radius: 3px;
+    font-size: 25px;
+    width: 290px;
+
+    text-align: center;
+    text-decoration: underline;
+
+    background-color: white;
+    color: var(--primary);
+}
 
 
 .dropdownItems{
@@ -99,6 +112,6 @@
 .menuButton{
     text-align: center;
     border: none;
-
+    color: white;
     background-color: rgba(0, 0, 0, 0);
 }
