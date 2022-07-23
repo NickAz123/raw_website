@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
 import useClickOutside from "../Helpers";
 
-function Navbar() {
+function Navbar({ articles }) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
   useClickOutside(ref, () => setNavDisplay(false));
@@ -14,7 +14,9 @@ function Navbar() {
       <div ref={ref} className={styles.issueDiv}>
         <button
           className={
-            navDisplay ? styles.dropdownButtonOpen : styles.dropdownButton
+            navDisplay
+              ? `${styles.dropdownButton} ${styles.open}`
+              : `${styles.dropdownButton} ${styles.closed}`
           }
           onClick={() => setNavDisplay(!navDisplay)}
         >
@@ -25,9 +27,13 @@ function Navbar() {
         </button>
         {navDisplay === true && (
           <div className={styles.dropdownItems}>
-            <button className={styles.dropdownItemsButton}>Example 1</button>
-            <button className={styles.dropdownItemsButton}>Example 2</button>
-            <button className={styles.dropdownItemsButton}>Example 3</button>
+            {articles.map((article) => {
+              return (
+                <button className={styles.dropdownItemsButton} key={article.id}>
+                  {article.title}
+                </button>
+              );
+            })}
           </div>
         )}
       </div>
