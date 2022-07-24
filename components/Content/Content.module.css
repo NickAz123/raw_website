@@ -1,11 +1,57 @@
 .contentContainer{
     /* background-color: green; */
-    height: 100vh;
     color: black;
+    
+    height: 100vh;
 }
 
 .articleContainer{
+    font-size: 20px;
+
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.articleImgContainer{
+    width:100%;
+    height:300px;
+    
+    background-color: green;
+}
+
+.articleContent{
+    max-width: 1000px;
+    width: 1000px;
+    
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photoCredits{
+    font-size: 15px;
+    margin-bottom: 5em;
+
+    color: grey;
+}
+
+.articleCredits{
+    display: flex;
+    justify-content: start;
+}
+
+.articleAuthor{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.articleDate{
+    font-size: 15px;
+    line-height: 200%;
+    margin-left: 30px;
+
+    color: grey;
+    vertical-align: center;
 }
 
 .season1 {
