@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../Content.module.css";
 
-function Article2() {
+function Article3() {
   return (
     <div className={styles.articleContainer}>
       <div className={styles.articleImgContainer}>
@@ -22,4 +22,4 @@ function Article2() {
   );
 }
 
-export default Article2;
+export default Article3;
