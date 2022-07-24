@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
 import useClickOutside from "../Helpers";
 
-function Navbar({ articles }) {
+function Navbar({ articles, setCurrentArticle, season, issue }) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
   useClickOutside(ref, () => setNavDisplay(false));
@@ -20,16 +20,20 @@ function Navbar({ articles }) {
           }
           onClick={() => setNavDisplay(!navDisplay)}
         >
-          <span>SEASON 1 - </span>
+          <span>{season.toUpperCase()} - </span>
           <span>
-            <b>ISSUE 1</b>
+            <b>{issue.toUpperCase()}</b>
           </span>
         </button>
         {navDisplay === true && (
           <div className={styles.dropdownItems}>
             {articles.map((article) => {
               return (
-                <button className={styles.dropdownItemsButton} key={article.id}>
+                <button
+                  className={styles.dropdownItemsButton}
+                  onClick={() => setCurrentArticle(article.id)}
+                  key={article.id}
+                >
                   {article.title}
                 </button>
               );

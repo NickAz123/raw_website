@@ -1,6 +1,11 @@
 .contentContainer{
-    /* background-color: red; */
-    height: 100%;
+    /* background-color: green; */
+    height: 100vh;
+    color: black;
+}
+
+.articleContainer{
+    display: flex;
 }
 
 .season1 {

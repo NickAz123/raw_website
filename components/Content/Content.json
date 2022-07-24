@@ -1,10 +1,11 @@
 {
     "Season1": {
-        "season":"Season 1",
+        "season":"season 1",
         "logo": "",
         "styles": "season1",
         "Issues" : {
             "Issue1" : {
+                "issue": "issue 1",
                 "Articles": [
                     {
                         "title": "This is Raw",

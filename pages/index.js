@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar/Navbar";
@@ -11,6 +11,11 @@ export default function Home() {
   const [currentIssue, setCurrentIssue] = useState(
     currentSeason["Issues"]["Issue1"]
   );
+  const [currentArticle, setCurrentArticle] = useState();
+
+  useEffect(() => {
+    setCurrentArticle(1);
+  }, []);
 
   return (
     <div className="container">
@@ -24,8 +29,17 @@ export default function Home() {
           seasonStyles[currentSeason.styles]
         }`}
       >
-        <Navbar articles={currentIssue.Articles} />
-        <Content />
+        <Navbar
+          articles={currentIssue.Articles}
+          setCurrentArticle={setCurrentArticle}
+          season={currentSeason["season"]}
+          issue={currentIssue["issue"]}
+        />
+        <Content
+          season={currentSeason["season"]}
+          issue={currentIssue["issue"]}
+          articleid={currentArticle}
+        />
       </div>
     </div>
   );
