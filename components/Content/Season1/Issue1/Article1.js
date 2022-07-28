@@ -40,7 +40,7 @@ function Article1() {
             leading up to my birthday, I thought it was going to be on a
             Wednesday, a
             <b>
-              <i>random-ass Wednesday</i>
+              <i> random-ass Wednesday</i>
             </b>
             , only to find out a week before that it landed on a Thursday. So I
             just stuck with it, it sounded cool.
