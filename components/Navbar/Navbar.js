@@ -44,11 +44,6 @@ function Navbar({ articles, setCurrentArticle, season, issue }) {
       <div className={styles.logoDiv}>
         {/* <img src="../public/raw-logo.svg" /> */}
       </div>
-      <div className={styles.menuDiv}>
-        <button className={styles.menuButton} type="button">
-          <MenuIcon fontSize="large" />
-        </button>
-      </div>
     </div>
   );
 }
