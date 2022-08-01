@@ -6,9 +6,8 @@ import { useClickOutside } from "../Helpers.js";
 function Navbar({ articles, setCurrentArticle, season, issue }) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
-  useClickOutside(ref, () => setNavDisplay(false));
 
-  const openMenu = () => {};
+  useClickOutside(ref, () => setNavDisplay(false));
 
   return (
     <div className={styles.navbar}>

@@ -7,7 +7,6 @@
 
 .articleContainer{
     font-size: 28px;
-    max-width: 1920px;
 
     display: flex;
     flex-direction: column;

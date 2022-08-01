@@ -33,6 +33,7 @@
 
     text-align: center;
     text-decoration: underline;
+    text-underline-offset: 6px;
 
     color: var(--navbarText);
 }
@@ -57,7 +58,7 @@
     flex-direction: column;
 
     top: 80%;
-    /* padding: .75rem; */
+    padding-bottom: 2rem;
     border-radius: 5px;
     width: 250px;
     
