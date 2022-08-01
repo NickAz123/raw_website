@@ -1,24 +1,33 @@
 import React from "react";
 import styles from "./Menu.module.css";
-import { useState } from "react";
-
-import MenuIcon from "@mui/icons-material/Menu";
+import { useState, useRef } from "react";
+import { animateBurger } from "../Helpers";
 
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menu = useRef(null);
+
+  const openBurger = (state, ref) => {
+    setIsMenuOpen(!state);
+    animateBurger(state, ref);
+  };
+
+  const menuStyle = isMenuOpen
+    ? `${styles.menuDiv} ${styles.menuDivOpen}`
+    : styles.menuDiv;
 
   return (
     <>
-      <div className={styles.menuDiv}>
-        <button
-          className={styles.menuTrigger}
-          type="button"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <MenuIcon fontSize="large" />
-        </button>
+      <div
+        className={menuStyle}
+        onClick={() => openBurger(isMenuOpen, menu)}
+        ref={menu}
+      >
+        <div className={`${styles.menuBurger} ${styles.burger1}`}></div>
+        <div className={`${styles.menuBurger} ${styles.burger2}`}></div>
       </div>
-      {isMenuOpen && (
+
+      {isMenuOpen === true && (
         <>
           <div className={styles.menuContainer}>
             <div className={styles.menuButton}>Issue 1</div>

@@ -104,12 +104,3 @@
     justify-content: center;
 }
 
-.menuButton{
-    z-index: 200;
-    text-align: center;
-    border: none;
-    background-color: blue;
-
-    color: black;
-    background-color: rgba(0, 0, 0, 0);
-}

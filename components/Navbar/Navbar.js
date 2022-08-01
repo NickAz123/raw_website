@@ -1,13 +1,14 @@
 import React from "react";
 import { useRef, useState } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
-import useClickOutside from "../Helpers";
+import { useClickOutside } from "../Helpers.js";
 
 function Navbar({ articles, setCurrentArticle, season, issue }) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
   useClickOutside(ref, () => setNavDisplay(false));
+
+  const openMenu = () => {};
 
   return (
     <div className={styles.navbar}>

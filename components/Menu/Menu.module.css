@@ -57,17 +57,45 @@
     position: fixed;
     top: 0;
     right: 0;
+    height: 56px;
+    margin-right: 40px;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 
     z-index: 200;
     text-align: center;
     border: none;
     background: none;
+
+    cursor: pointer;
+    
 }
 
-.menuTrigger{
-    padding-right: 3em;
-    padding-top: 2em;
-    background: none;
+.menuBurger{
+
+    width: 56px;
+    height: 4px;
+    
+    border-radius: 5px;
+    
+    background-color: white;
     border: none;
-    cursor: pointer;
+    
+    transition: all .2s ease-in-out;
+}
+
+/* Animation */
+.menuDivOpen .menuBurger{
+    background-color: var(--primary);
+}
+
+.menuDivOpen .burger1{
+    transform: rotate(45deg) translate(10px, 10px);
+}
+.menuDivOpen .burger2{
+    transform: rotate(-45deg) translate(2px, -4px);
 }
