@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Content from "../components/Content/Content";
 import seasonStyles from "../components/Content/Content.module.css";
 import content from "../components/Content/Content.json";
+import Menu from "../components/Menu/Menu";
 
 export default function Home() {
   const [currentSeason, setCurrentSeason] = useState(content["Season1"]);
@@ -40,6 +41,7 @@ export default function Home() {
           issue={currentIssue["issue"]}
           articleid={currentArticle}
         />
+        <Menu />
       </div>
     </div>
   );

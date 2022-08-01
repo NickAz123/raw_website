@@ -1,12 +1,12 @@
 import React from "react";
 import { useRef, useState } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
-import useClickOutside from "../Helpers";
+import { useClickOutside } from "../Helpers.js";
 
 function Navbar({ articles, setCurrentArticle, season, issue }) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
+
   useClickOutside(ref, () => setNavDisplay(false));
 
   return (
@@ -43,11 +43,6 @@ function Navbar({ articles, setCurrentArticle, season, issue }) {
       </div>
       <div className={styles.logoDiv}>
         {/* <img src="../public/raw-logo.svg" /> */}
-      </div>
-      <div className={styles.menuDiv}>
-        <button className={styles.menuButton} type="button">
-          <MenuIcon fontSize="large" />
-        </button>
       </div>
     </div>
   );
