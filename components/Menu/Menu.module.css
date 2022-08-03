@@ -33,8 +33,13 @@
 
     padding-left: 100px;
     padding-bottom: 10px;
+    cursor: pointer;
 
     color: var(--primary);
+}
+
+.menuButton:hover{
+    color: var(--menuHover);
 }
 
 .menuSocialsContainer{
