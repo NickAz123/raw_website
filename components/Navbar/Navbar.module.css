@@ -79,6 +79,10 @@
     color: var(--primary);
 }
 
+.bold{
+    font-weight: 600;
+}
+
 .dropdownItemsButton:hover {
     color: white;
     background-color: var(--primary);
