@@ -3,7 +3,13 @@ import { useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 import { useClickOutside } from "../Helpers.js";
 
-function Navbar({ articles, setCurrentArticle, season, issue }) {
+function Navbar({
+  articles,
+  currentArticle,
+  setCurrentArticle,
+  season,
+  issue,
+}) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
 
@@ -30,7 +36,9 @@ function Navbar({ articles, setCurrentArticle, season, issue }) {
             {articles.map((article) => {
               return (
                 <button
-                  className={styles.dropdownItemsButton}
+                  className={`${styles.dropdownItemsButton} ${
+                    currentArticle === article.id ? styles.bold : ""
+                  }`}
                   onClick={() => setCurrentArticle(article.id)}
                   key={article.id}
                 >

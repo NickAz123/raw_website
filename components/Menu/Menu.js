@@ -27,27 +27,31 @@ function Menu() {
         <div className={`${styles.menuBurger} ${styles.burger2}`}></div>
       </div>
 
-      {isMenuOpen === true && (
-        <>
-          <div className={styles.menuContainer}>
-            <div className={styles.menuButton}>Issue 1</div>
-            <div className={styles.menuButton}>Archive</div>
-            <div className={styles.menuButton}>About</div>
-            <div className={styles.menuSocialsContainer}>
-              <div className={styles.menuSocialsButton}>
-                <img src="./instagram-logo-red.svg"></img>
-              </div>
-              <div className={styles.menuSocialsButton}>
-                <img src="./spotify-logo-red.svg"></img>
-              </div>
-              <div className={styles.menuSocialsButton}>
-                <img src="./akon-logo.svg"></img>
-              </div>
-            </div>
+      <div
+        className={`${styles.menuContainer} ${
+          isMenuOpen ? styles.open : styles.closed
+        }`}
+      >
+        <div className={styles.menuButton}>Issue 1</div>
+        <div className={styles.menuButton}>Archive</div>
+        <div className={styles.menuButton}>About</div>
+        <div className={styles.menuSocialsContainer}>
+          <div className={styles.menuSocialsButton}>
+            <img src="./instagram-logo-red.svg"></img>
           </div>
-          <div className={styles.menuBackdrop}></div>
-        </>
-      )}
+          <div className={styles.menuSocialsButton}>
+            <img src="./spotify-logo-red.svg"></img>
+          </div>
+          <div className={styles.menuSocialsButton}>
+            <img src="./akon-logo.svg"></img>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`${styles.menuBackdrop} ${
+          isMenuOpen ? styles.backdropVisible : styles.backdropInvisible
+        }`}
+      ></div>
     </>
   );
 }
