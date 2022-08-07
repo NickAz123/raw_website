@@ -33,11 +33,15 @@ function Menu() {
           isMenuOpen ? styles.open : styles.closed
         }`}
       >
-        <button className={styles.menuButton}>Issue 1</button>
+        <Link href="/">
+          <button className={styles.menuButton}>Issue 1</button>
+        </Link>
         <Link href="/archive">
           <button className={styles.menuButton}>Archive</button>
         </Link>
-        <button className={styles.menuButton}>About</button>
+        <Link href="/about">
+          <button className={styles.menuButton}>About</button>
+        </Link>
         <div className={styles.menuSocialsContainer}>
           <div className={styles.menuSocialsButton}>
             <img src="./instagram-logo-red.svg"></img>
