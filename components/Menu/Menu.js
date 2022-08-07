@@ -43,15 +43,23 @@ function Menu() {
           <button className={styles.menuButton}>About</button>
         </Link>
         <div className={styles.menuSocialsContainer}>
-          <div className={styles.menuSocialsButton}>
-            <img src="./instagram-logo-red.svg"></img>
-          </div>
-          <div className={styles.menuSocialsButton}>
-            <img src="./spotify-logo-red.svg"></img>
-          </div>
-          <div className={styles.menuSocialsButton}>
-            <img src="./akon-logo.svg"></img>
-          </div>
+          <Link href="https://www.instagram.com/randomasswednesday/">
+            <button className={styles.menuSocialsButton}>
+              <img src="./instagram-logo-red.svg"></img>
+            </button>
+          </Link>
+
+          <Link href="">
+            <button className={styles.menuSocialsButton}>
+              <img src="./spotify-logo-red.svg"></img>
+            </button>
+          </Link>
+
+          <Link href="">
+            <button className={styles.menuSocialsButton}>
+              <img src="./akon-logo.svg"></img>
+            </button>
+          </Link>
         </div>
       </div>
       <div
