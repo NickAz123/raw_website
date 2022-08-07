@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Menu.module.css";
 import { useState, useRef } from "react";
 import { animateBurger } from "../Helpers";
+import Link from "next/link";
 
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,9 +33,11 @@ function Menu() {
           isMenuOpen ? styles.open : styles.closed
         }`}
       >
-        <div className={styles.menuButton}>Issue 1</div>
-        <div className={styles.menuButton}>Archive</div>
-        <div className={styles.menuButton}>About</div>
+        <button className={styles.menuButton}>Issue 1</button>
+        <Link href="/archive">
+          <button className={styles.menuButton}>Archive</button>
+        </Link>
+        <button className={styles.menuButton}>About</button>
         <div className={styles.menuSocialsContainer}>
           <div className={styles.menuSocialsButton}>
             <img src="./instagram-logo-red.svg"></img>
