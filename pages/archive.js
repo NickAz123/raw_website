@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Menu from "../components/Menu/Menu";
+import ArchiveContent from "../components/ArchiveContent/ArchiveContent";
 
 import styles from "../styles/Home.module.css";
 import seasonStyles from "../components/Content/Content.module.css";
@@ -17,6 +18,7 @@ function Archive() {
       <div className={`${styles.mainContainer} ${seasonStyles.season1}`}>
         <Navbar currentArticle={null} />
         <Menu />
+        <ArchiveContent></ArchiveContent>
       </div>
     </div>
   );
