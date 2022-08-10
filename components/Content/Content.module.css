@@ -91,3 +91,11 @@
     --navbarText: white;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #1E1E1E;
+    height: 15em;
+    color: white;
+}

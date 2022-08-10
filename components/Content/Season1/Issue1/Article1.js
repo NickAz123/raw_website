@@ -72,6 +72,30 @@ function Article1() {
           <p>Random Ass Wednesday</p>
         </div>
       </div>
+
+      <footer className={styles.footer}>
+        <div classname={styles.footerLeft}>
+          <div>
+            <img src="./Raw-Logo.svg" alt="photo"></img>
+          </div>
+          <p>©Random Ass Wednesday 2022</p>
+        </div>
+
+        <div classname={styles.footerMiddle}>
+          <div><a href="https://www.randomasswednesday.com/archive"> Archive </a></div>
+
+          <div><a href="https://www.randomasswednesday.com/aboutRAW"> About RAW </a></div>
+
+          <div><a href="https://www.instagram.com/randomasswednesday">Instagram</a> </div>
+
+          <div><a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">Spotify</a> </div>
+
+        </div>
+
+        <div classname={styles.footerRight}>
+          <div>stay with us, email and yes please</div>
+        </div>
+      </footer>
     </div>
   );
 }
