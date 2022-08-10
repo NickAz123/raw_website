@@ -74,26 +74,42 @@ function Article1() {
       </div>
 
       <footer className={styles.footer}>
-        <div classname={styles.footerLeft}>
+        <div>
           <div>
             <img src="./Raw-Logo.svg" alt="photo"></img>
           </div>
-          <p>©Random Ass Wednesday 2022</p>
+          <p classname={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
         </div>
 
         <div classname={styles.footerMiddle}>
-          <div><a href="https://www.randomasswednesday.com/archive"> Archive </a></div>
+          <div>
+            <a href="https://www.randomasswednesday.com/archive"> Archive </a>
+          </div>
 
-          <div><a href="https://www.randomasswednesday.com/aboutRAW"> About RAW </a></div>
+          <div>
+            <a href="https://www.randomasswednesday.com/aboutRAW">
+              {" "}
+              About RAW{" "}
+            </a>
+          </div>
 
-          <div><a href="https://www.instagram.com/randomasswednesday">Instagram</a> </div>
+        <div classname={styles.footerSocials}>
+          <div className={styles.menuSocialsButtonWhite}>
+            <a href="https://www.instagram.com/randomasswednesday">
+                <img src="./instagram-logo-white.svg"></img></a>
+              </div>
 
-          <div><a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">Spotify</a> </div>
-
+              <div className={styles.menuSocialsButton}>
+                <a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">
+                <img src="./spotify-logo-white.svg"></img></a>
+              </div>
+        </div>
         </div>
 
         <div classname={styles.footerRight}>
-          <div>stay with us, email and yes please</div>
+          <div>STAY RAW WITH US</div>
+
+          <div>underline with a yes please</div>
         </div>
       </footer>
     </div>

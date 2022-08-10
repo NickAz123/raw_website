@@ -13,6 +13,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .articleImgContainer{
@@ -98,4 +99,16 @@
     background-color: #1E1E1E;
     height: 15em;
     color: white;
+    padding-top: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.footerCopyright{
+    font-size: 10px;
+}
+
+.footerSocials{
+    display: flex;
+    flex-direction: row;
 }
