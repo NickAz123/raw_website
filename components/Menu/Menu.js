@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Menu.module.css";
 import { useState, useRef } from "react";
 import { animateBurger } from "../Helpers";
@@ -66,6 +66,7 @@ function Menu() {
         className={`${styles.menuBackdrop} ${
           isMenuOpen ? styles.backdropVisible : styles.backdropInvisible
         }`}
+        onClick={() => openBurger(isMenuOpen, menu)}
       ></div>
     </>
   );
