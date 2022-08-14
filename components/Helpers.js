@@ -24,7 +24,7 @@ const useClickOutside = (ref, handler) => {
 
 const animateBurger = (isMenuOpen, ref) => {
   let menuBtn = ref.current;
-  console.log(isMenuOpen);
+
   if (isMenuOpen) {
     menuBtn.classList.add("open");
   } else {

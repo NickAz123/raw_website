@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Menu.module.css";
 import { useState, useRef } from "react";
 import { animateBurger } from "../Helpers";
+import Link from "next/link";
 
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,25 +33,40 @@ function Menu() {
           isMenuOpen ? styles.open : styles.closed
         }`}
       >
-        <div className={styles.menuButton}>Issue 1</div>
-        <div className={styles.menuButton}>Archive</div>
-        <div className={styles.menuButton}>About</div>
+        <Link href="/">
+          <button className={styles.menuButton}>Issue 1</button>
+        </Link>
+        <Link href="/archive">
+          <button className={styles.menuButton}>Archive</button>
+        </Link>
+        <Link href="/about">
+          <button className={styles.menuButton}>About</button>
+        </Link>
         <div className={styles.menuSocialsContainer}>
-          <div className={styles.menuSocialsButton}>
-            <img src="./instagram-logo-red.svg"></img>
-          </div>
-          <div className={styles.menuSocialsButton}>
-            <img src="./spotify-logo-red.svg"></img>
-          </div>
-          <div className={styles.menuSocialsButton}>
-            <img src="./akon-logo.svg"></img>
-          </div>
+          <Link href="https://www.instagram.com/randomasswednesday/">
+            <button className={styles.menuSocialsButton}>
+              <img src="./instagram-logo-red.svg"></img>
+            </button>
+          </Link>
+
+          <Link href="">
+            <button className={styles.menuSocialsButton}>
+              <img src="./spotify-logo-red.svg"></img>
+            </button>
+          </Link>
+
+          <Link href="">
+            <button className={styles.menuSocialsButton}>
+              <img src="./akon-logo.svg"></img>
+            </button>
+          </Link>
         </div>
       </div>
       <div
         className={`${styles.menuBackdrop} ${
           isMenuOpen ? styles.backdropVisible : styles.backdropInvisible
         }`}
+        onClick={() => openBurger(isMenuOpen, menu)}
       ></div>
     </>
   );
