@@ -45,6 +45,10 @@
     animation: .2s ease-in-out slideOut;
 }
 
+.disabled{
+    color: grey !important;
+}
+
 @keyframes fadeIn{
     0%{
         opacity: 0;
@@ -110,7 +114,7 @@
     padding-bottom: 80px;
 
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-grow: 4;
 
     align-items: flex-end;

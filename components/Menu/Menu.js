@@ -37,29 +37,37 @@ function Menu() {
           <button className={styles.menuButton}>Issue 1</button>
         </Link>
         <Link href="/archive">
-          <button className={styles.menuButton}>Archive</button>
+          <button
+            className={`${styles.menuButton} ${styles.disabled}`}
+            disabled
+          >
+            Archive
+          </button>
         </Link>
         <Link href="/about">
           <button className={styles.menuButton}>About</button>
         </Link>
         <div className={styles.menuSocialsContainer}>
-          <Link href="https://www.instagram.com/randomasswednesday/">
+          <a
+            href="https://www.instagram.com/randomasswednesday/"
+            target="_blank"
+          >
             <button className={styles.menuSocialsButton}>
               <img src="./instagram-logo-red.svg"></img>
             </button>
-          </Link>
+          </a>
 
-          <Link href="">
+          <a href="">
             <button className={styles.menuSocialsButton}>
               <img src="./spotify-logo-red.svg"></img>
             </button>
-          </Link>
+          </a>
 
-          <Link href="">
+          <a href="">
             <button className={styles.menuSocialsButton}>
               <img src="./akon-logo.svg"></img>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       <div

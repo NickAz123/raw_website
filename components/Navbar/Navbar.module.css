@@ -9,6 +9,7 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
 
     color: var(--navbarText);
     background: linear-gradient(180deg, var(--primary) 0%, rgba(255,255,2550, 0) 100%);

@@ -5,6 +5,15 @@
     height: 100vh;
 }
 
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .articleContainer{
     font-size: 28px;
 
@@ -13,6 +22,10 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+
+
+    
+    animation: 1s ease-in-out fadeIn;
 }
 
 .articleImgContainer{
@@ -41,7 +54,7 @@
 .articleCredits{
     margin-bottom: 0.6em;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .articleAuthor{
