@@ -6,6 +6,7 @@ import Content from "../components/Content/Content";
 import seasonStyles from "../components/Content/Content.module.css";
 import content from "../components/Content/Content.json";
 import Menu from "../components/Menu/Menu";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   const [currentSeason, setCurrentSeason] = useState(content["Season1"]);
