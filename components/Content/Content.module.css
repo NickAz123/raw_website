@@ -104,11 +104,36 @@
     padding-right: 2em;
 }
 
+
+
+.footerMiddleArchive {
+    margin-bottom: 15px;
+}
+
 .footerCopyright{
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .footerSocials{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 40px;
 }
+
+.menuSocialsButtonWhite{
+    margin-right: 30px;
+}
+
+.footerRight{
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.footerRightPlaceholder{
+    font-size: 21px;
+    margin-top: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 25px;
+}
+

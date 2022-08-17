@@ -78,39 +78,42 @@ function Article1() {
           <div>
             <img src="./Raw-Logo.svg" alt="photo"></img>
           </div>
-          <p classname={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
+          <p className={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
         </div>
 
-        <div classname={styles.footerMiddle}>
-          <div>
+        <div className={styles.footerMiddle}>
+          <div className={styles.footerMiddleArchive}>
             <a href="https://www.randomasswednesday.com/archive"> Archive </a>
           </div>
 
-          <div>
+          <div className={styles.footerMiddleAboutRAW}>
             <a href="https://www.randomasswednesday.com/aboutRAW">
               {" "}
               About RAW{" "}
             </a>
           </div>
 
-        <div classname={styles.footerSocials}>
+        <div className={styles.footerSocials}>
           <div className={styles.menuSocialsButtonWhite}>
             <a href="https://www.instagram.com/randomasswednesday">
                 <img src="./instagram-logo-white.svg"></img></a>
               </div>
 
-              <div className={styles.menuSocialsButton}>
+              <div className={styles.menuSocialsButtonWhite}>
                 <a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">
                 <img src="./spotify-logo-white.svg"></img></a>
               </div>
         </div>
         </div>
 
-        <div classname={styles.footerRight}>
+        <div className={styles.footerRight}>
           <div>STAY RAW WITH US</div>
 
-          <div>underline with a yes please</div>
+          <div className={styles.footerRightPlaceholder} contenteditable="false"><i>randomasswednesday@gmail.com</i></div>
+
+
         </div>
+
       </footer>
     </div>
   );
