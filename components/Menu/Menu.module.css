@@ -1,8 +1,29 @@
+@keyframes slideIn{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
 .menuContainer{
     width: 793px;
     height: 100vh;
 
     padding-top: 5rem;
+    opacity: 0;
 
     top: 0;
     right: 0px;
@@ -13,19 +34,59 @@
     position: fixed;
 
     background-color: white;
+    
+}
+.open{
+    opacity: 1;
+    animation: .2s ease-in-out slideIn;
+}
+
+.closed{
+    animation: .2s ease-in-out slideOut;
+}
+
+.disabled{
+    color: grey !important;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.15;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 0.15;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 .menuBackdrop{
     width: 100vw;
     height: 100vh;
-    top:0;
     
-    opacity: .15;
+    top:0;
     position: fixed;
+    opacity: 0;
 
     z-index: 50;
 
     background-color: black;
+}
+.backdropVisible{
+    opacity: 0.15 !important;
+    animation: .3s ease-in-out fadeIn;
+}
+
+.backdropInvisible{
+    z-index: -100;
+    animation: .3s linear fadeOut;
 }
 
 .menuButton{
@@ -33,23 +94,40 @@
 
     padding-left: 100px;
     padding-bottom: 10px;
+    cursor: pointer;
+    
+    background: none;
+    border: none;
+
+    text-align: left;
 
     color: var(--primary);
+}
+
+.menuButton:hover{
+    color: var(--menuHover);
 }
 
 .menuSocialsContainer{
     bottom: 0;
     padding-left: 100px;
-    margin-top: 12em;
+    padding-bottom: 80px;
 
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
+    flex-grow: 4;
+
+    align-items: flex-end;
 }
 
 .menuSocialsButton{
     width: 50px;
     height: 50px;
     
+    background: none;
+    border: none;
+    
+    cursor: pointer;
     margin-right: 4em;
 }
 
