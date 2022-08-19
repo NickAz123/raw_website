@@ -72,6 +72,8 @@ function Article1() {
           <p>Random Ass Wednesday</p>
         </div>
       </div>
+
+      
     </div>
   );
 }
