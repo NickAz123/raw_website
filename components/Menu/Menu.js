@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Menu.module.css";
 import { useState, useRef } from "react";
 import { animateBurger } from "../Helpers";
