@@ -40,7 +40,13 @@
 
 .articleContent{
     max-width: 70%;
-    
+    margin-top: 25px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -67,7 +73,7 @@
 .articleDate{
     font-size: 16px;
     line-height: 200%;
-    margin-left: 30px;
+    margin-left: 23px;
 
     color: grey;
     vertical-align: center;
