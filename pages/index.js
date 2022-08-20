@@ -15,7 +15,7 @@ export default function Home() {
   const [currentArticle, setCurrentArticle] = useState();
 
   useEffect(() => {
-    setCurrentArticle(1);
+    setCurrentArticle(3);
   }, []);
 
   return (
