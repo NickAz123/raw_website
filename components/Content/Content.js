@@ -11,6 +11,7 @@ function Content(props) {
         <Season1 issue={props.issue} articleid={props.currentArticle} />
       )}
       <PageTurner
+        currentIssue={props.currentIssue}
         currentArticle={props.currentArticle}
         setCurrentArticle={props.setCurrentArticle}
       />

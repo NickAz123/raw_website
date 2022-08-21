@@ -39,6 +39,7 @@ export default function Home() {
           currentArticle={currentArticle}
         />
         <Content
+          currentIssue={currentIssue}
           season={currentSeason["season"]}
           issue={currentIssue["issue"]}
           currentArticle={currentArticle}
