@@ -40,7 +40,8 @@ export default function Home() {
         <Content
           season={currentSeason["season"]}
           issue={currentIssue["issue"]}
-          articleid={currentArticle}
+          currentArticle={currentArticle}
+          setCurrentArticle={setCurrentArticle}
         />
         <Menu />
       </div>

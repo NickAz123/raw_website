@@ -8,8 +8,24 @@
                 "issue": "issue 1",
                 "Articles": [
                     {
+                        "title": "This is Raw",
+                        "id": 1
+                    },
+                    {
+                        "title": "Cigarette Courtesy",
+                        "id": 2
+                    },
+                    {
                         "title": "Breakdown Of A Breakdown",
                         "id": 3
+                    },
+                    {
+                        "title": "I Hate Orange",
+                        "id": 4
+                    },
+                    {
+                        "title": "A Reminder About Seasons",
+                        "id": 5
                     }
                 ]
             }

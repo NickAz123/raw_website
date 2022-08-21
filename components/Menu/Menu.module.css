@@ -43,6 +43,7 @@
 
 .closed{
     animation: .2s ease-in-out slideOut;
+    z-index: -100;
 }
 
 .disabled{

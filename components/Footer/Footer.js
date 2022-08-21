@@ -38,7 +38,7 @@ function Footer() {
       <div className={styles.footerRight}>
         <div>STAY RAW WITH US</div>
 
-        <div className={styles.footerRightPlaceholder} contenteditable="false">
+        <div className={styles.footerRightPlaceholder}>
           <i>randomasswednesday@gmail.com</i>
         </div>
       </div>
