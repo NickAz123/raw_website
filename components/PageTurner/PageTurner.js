@@ -3,18 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./PageTurner.module.css";
 import content from "../Content/Content.json";
-import { StarPurple500Sharp } from "@mui/icons-material";
 
 function PageTurner(props) {
   const changeArticle = (id, goForward) => {
-    console.log(id);
     if (goForward) {
       props.setCurrentArticle(id + 1);
     } else {
       props.setCurrentArticle(id - 1);
     }
 
-    console.log(props.currentArticle);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -27,7 +25,7 @@ function PageTurner(props) {
           <FontAwesomeIcon
             icon={faAngleLeft}
             style={{
-              fontSize: 35,
+              fontSize: 36,
               color: "black",
             }}
           />
@@ -43,7 +41,7 @@ function PageTurner(props) {
         <div className={styles.sideBtnArrow}>
           <FontAwesomeIcon
             icon={faAngleRight}
-            style={{ fontSize: 35, color: "black" }}
+            style={{ fontSize: 36, color: "black" }}
           />
         </div>
       </div>
