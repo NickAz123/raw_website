@@ -18,7 +18,9 @@ function PageTurner(props) {
   return (
     <div className={styles.pageTurnerContainer}>
       <div
-        className={styles.sideBtn}
+        className={`${styles.sideBtn} ${
+          props.currentArticle === 1 ? `${styles.btnDisabled}` : ""
+        }`}
         onClick={() => changeArticle(props.currentArticle, false)}
       >
         <div className={styles.sideBtnArrow}>
