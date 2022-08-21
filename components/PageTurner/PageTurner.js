@@ -3,20 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./PageTurner.module.css";
 
-import content from "../Content/Content.json";
-import { CollectionsOutlined } from "@mui/icons-material";
-
 function PageTurner(props) {
-  const arrayId = props.currentArticle - 1;
+  const arrayId = props.currentArticle;
+  const articlesAr = props.currentIssue["Articles"];
+  const totalArticles = articlesAr.length;
 
   const getNextArticleName = (currentId, next = true, last = false) => {
     if (last) {
       return props.currentIssue["Articles"][currentId]["title"];
     } else {
       if (next) {
-        return props.currentIssue["Articles"][currentId + 1]["title"];
+        return props.currentIssue["Articles"]["title"];
       } else {
-        return props.currentIssue["Articles"][currentId - 1]["title"];
+        return props.currentIssue["Articles"]["title"];
       }
     }
   };
@@ -35,7 +34,7 @@ function PageTurner(props) {
     <div className={styles.pageTurnerContainer}>
       <div
         className={`${styles.sideBtn} ${
-          props.currentArticle === 1 ? `${styles.btnDisabled}` : ""
+          arrayId === 0 ? `${styles.btnDisabled}` : ""
         }`}
         onClick={() => changeArticle(props.currentArticle, false)}
       >
@@ -54,11 +53,17 @@ function PageTurner(props) {
         </div>
       </div>
       <div
-        className={styles.sideBtn}
+        className={`${styles.sideBtn} ${
+          arrayId === totalArticles - 1 ? `${styles.btnDisabled}` : ""
+        }`}
         onClick={() => changeArticle(props.currentArticle, true)}
       >
         <div className={styles.sideBtnName}>
-          {getNextArticleName(arrayId, true)}
+          {getNextArticleName(
+            arrayId,
+            true,
+            arrayId === totalArticles - 1 ? true : false
+          )}
         </div>
         <div className={styles.sideBtnArrow}>
           <FontAwesomeIcon

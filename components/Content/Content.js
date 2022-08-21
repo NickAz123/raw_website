@@ -10,11 +10,11 @@ function Content(props) {
       {props.season === "season 1" && (
         <Season1 issue={props.issue} articleid={props.currentArticle} />
       )}
-      <PageTurner
+      {/* <PageTurner
         currentIssue={props.currentIssue}
         currentArticle={props.currentArticle}
         setCurrentArticle={props.setCurrentArticle}
-      />
+      /> */}
       <Footer />
     </div>
   );
