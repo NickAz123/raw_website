@@ -1,6 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./PageTurner.module.css";
 import content from "../Content/Content.json";
+import { StarPurple500Sharp } from "@mui/icons-material";
 
 function PageTurner(props) {
   const changeArticle = (id, goForward) => {
@@ -20,13 +23,29 @@ function PageTurner(props) {
         className={styles.sideBtn}
         onClick={() => changeArticle(props.currentArticle, false)}
       >
-        Left
+        <div className={styles.sideBtnArrow}>
+          <FontAwesomeIcon
+            icon={faAngleLeft}
+            style={{
+              fontSize: 35,
+              color: "black",
+            }}
+          />
+        </div>
+
+        <div className={styles.sideBtnName}>Previous</div>
       </div>
       <div
         className={styles.sideBtn}
         onClick={() => changeArticle(props.currentArticle, true)}
       >
-        Right
+        <div className={styles.sideBtnName}>Next</div>
+        <div className={styles.sideBtnArrow}>
+          <FontAwesomeIcon
+            icon={faAngleRight}
+            style={{ fontSize: 35, color: "black" }}
+          />
+        </div>
       </div>
     </div>
   );

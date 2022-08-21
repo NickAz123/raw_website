@@ -11,9 +11,27 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-color: green;
 }
 
 .sideBtn{
+    height: 53px;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
     cursor: pointer;
+}
+
+.sideBtnArrow{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 57px;
+}
+.sideBtnName {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 53px;
+    
+    margin-left: 48px;
+    margin-right: 48px;
 }
