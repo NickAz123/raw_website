@@ -53,19 +53,19 @@ function Menu() {
             target="_blank"
           >
             <button className={styles.menuSocialsButton}>
-              <img src="./instagram-logo-red.svg"></img>
+              <img className={styles.img} src="./instagram-logo-red.svg"></img>
             </button>
           </a>
 
           <a href="">
             <button className={styles.menuSocialsButton}>
-              <img src="./spotify-logo-red.svg"></img>
+              <img className={styles.img} src="./spotify-logo-red.svg"></img>
             </button>
           </a>
 
           <a href="">
             <button className={styles.menuSocialsButton}>
-              <img src="./akon-logo.svg"></img>
+              <img className={styles.img} src="./akon-logo.svg"></img>
             </button>
           </a>
         </div>

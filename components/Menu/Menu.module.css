@@ -11,17 +11,23 @@
     0%{
         opacity: 1;
         transform: translateX(0);
+        z-index: 100;
+    }
+    90%{
+        z-index: 100
     }
     100%{
         opacity: 1;
         transform: translateX(100%);
+        z-index: -100;
     }
 }
 
 .menuContainer{
     width: 793px;
-    height: 100vh;
+    height: 100%;
 
+    padding-left: 100px;
     padding-top: 5rem;
     opacity: 0;
 
@@ -70,7 +76,7 @@
 
 .menuBackdrop{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     
     top:0;
     position: fixed;
@@ -93,7 +99,6 @@
 .menuButton{
     font-size: 115px;
 
-    padding-left: 100px;
     padding-bottom: 10px;
     cursor: pointer;
     
@@ -111,7 +116,6 @@
 
 .menuSocialsContainer{
     bottom: 0;
-    padding-left: 100px;
     padding-bottom: 80px;
 
     display: flex;
@@ -122,13 +126,18 @@
 }
 
 .menuSocialsButton{
-    width: 50px;
-    height: 50px;
-    
+    width: 80px;
+    height: 80px;
+    margin-right: 2rem;
     background: none;
     border: none;
     
     cursor: pointer;
+}
+
+.img{
+    width: 80px;
+    height: 80px;
     margin-right: 4em;
 }
 
@@ -177,4 +186,67 @@
 }
 .menuDivOpen .burger2{
     transform: rotate(-45deg) translate(2px, -4px);
+}
+
+/* Tablet Styling */
+@media (max-width: 900px) and (orientation: portrait){
+    
+    .menuContainer{
+        padding-left: 30px;
+        width: 350px;
+    }
+    .menuButton{
+        font-size: 60px;
+    }
+  
+}
+@media (max-width: 1200px) and (orientation: landscape){
+    
+    .menuContainer{
+        padding-left: 30px;
+        width: 400px;
+    }
+    .menuButton{
+        font-size: 80px;
+    }
+  
+}
+
+/*Phone Styling*/
+@media (max-width: 430px) and (orientation: portrait){
+    
+    .menuContainer{
+        padding-left: 30px;
+        width: 250px;
+    }
+    .menuButton{
+        font-size: 40px;
+    }
+    .menuSocialsContainer{
+        padding-bottom: 1rem !important;
+    }
+    .menuSocialsButton{
+        margin-right: 1rem;
+    }
+    .img{
+        width: 35px;
+    }
+  
+}
+@media (max-width: 900px) and (orientation: landscape){
+    
+    .menuContainer{
+        padding-left: 30px;
+        width: 300px;
+    }
+    .menuSocialsContainer{
+        padding-bottom: 1rem !important;
+    }
+    .menuSocialsButton{
+        margin-right: 2rem;
+    }
+    .menuButton{
+        font-size: 40px;
+    }
+  
 }

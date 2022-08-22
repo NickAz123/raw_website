@@ -4,15 +4,6 @@
     height: 100vh;
 }
 
-@keyframes fadeIn{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 .articleContainer{
     font-size: 28px;
 
@@ -38,6 +29,12 @@
     height: auto;
 }
 
+/* @media (max-width: 900px){
+    .articleContent{
+        max-width: 100% !important;
+    }
+} */
+
 .articleContent{
     max-width: 70%;
     margin-top: 25px;
@@ -50,6 +47,7 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .photoCredits{
@@ -105,11 +103,94 @@
     font-size: 32px;
 }
 
-
 .season1 {
     --primary: rgba(255,0,0,1);
     --textPrimary: white;
     --navbarText: white;
     --menuHover: #F584BD;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Tablet Styling */
+@media (max-width: 900px) and (orientation: portrait){
+    
+    .articleContainer{
+        font-size: 20px;
+    }
+
+    .articleContent{
+        max-width: 100% !important;
+    }
+
+    .articleTitle{
+        font-size: 82px;
+    }
+  
+}
+@media (max-width: 1200px) and (orientation: landscape){
+    .articleContainer{
+        font-size: 20px;
+    }
+    .articleContent{
+        max-width: 90% !important;
+    }
+    .articleTitle{
+        font-size: 82px;
+    }
+}
+
+/*Phone Styling*/
+@media (max-width: 430px) and (orientation: portrait){
+    .articleContainer{
+        font-size: 20px;
+    }
+    .articleContent{
+        max-width: 90% !important;
+    }
+    .articleTitle{
+        font-size: 40px;
+    }
+    .photoCredits{
+        margin-bottom: 15px;
+        font-size: 11px;
+    }
+    
+    .articleAuthor{
+        font-size: 15px;
+    }
+    .articleDate{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape){
+    .articleContainer{
+        font-size: 20px;
+    }
+    .articleContent{
+        max-width: 90% !important;
+    }
+    .articleTitle{
+        font-size: 40px;
+    }
+    .photoCredits{
+        margin-bottom: 15px;
+        font-size: 11px;
+    }
+    
+    .articleAuthor{
+        font-size: 15px;
+    }
+    .articleDate{
+        font-size: 13px;
+    }
 }
 

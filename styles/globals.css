@@ -5,6 +5,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: black;
+
+  --tabletPortrait: 900px;
+  --tabletLandscape: 1200px;
+
+  --phonePortrait: 430px;
+  --phoneLandscape: 900px;
+
 }
 
 a {
