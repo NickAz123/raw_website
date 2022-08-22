@@ -1,7 +1,6 @@
 .contentContainer{
     color: black;
-    
-    height: 100vh;
+    height: 200px;
 }
 
 .articleContainer{
@@ -29,12 +28,6 @@
     height: auto;
 }
 
-/* @media (max-width: 900px){
-    .articleContent{
-        max-width: 100% !important;
-    }
-} */
-
 .articleContent{
     max-width: 70%;
     margin-top: 25px;
@@ -47,7 +40,6 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .photoCredits{

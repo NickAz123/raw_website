@@ -7,14 +7,14 @@ import Article5 from "./Article5";
 
 function Issue1({ articleid }) {
   return (
-    <div>
+    <>
       {articleid == 0 && <Article3 />}
       {/* {articleid == 0 && <Article1 />}
       {articleid == 1 && <Article2 />}
       {articleid == 2 && <Article3 />}
       {articleid == 3 && <Article4 />}
       {articleid == 4 && <Article5 />} */}
-    </div>
+    </>
   );
 }
 

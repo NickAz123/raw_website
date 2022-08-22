@@ -6,7 +6,11 @@ function Footer() {
     <div className={styles.footer}>
       <div>
         <div>
-          <img src="./Raw-Logo.svg" alt="photo"></img>
+          <img
+            className={styles.footerImg}
+            src="./Raw-Logo.svg"
+            alt="photo"
+          ></img>
         </div>
         <p className={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
       </div>
@@ -23,13 +27,19 @@ function Footer() {
         <div className={styles.footerSocials}>
           <div className={styles.menuSocialsButtonWhite}>
             <a href="https://www.instagram.com/randomasswednesday">
-              <img src="./instagram-logo-white.svg"></img>
+              <img
+                className={styles.footerSocialImg}
+                src="./instagram-logo-white.svg"
+              ></img>
             </a>
           </div>
 
           <div className={styles.menuSocialsButtonWhite}>
             <a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">
-              <img src="./spotify-logo-white.svg"></img>
+              <img
+                className={styles.footerSocialImg}
+                src="./spotify-logo-white.svg"
+              ></img>
             </a>
           </div>
         </div>

@@ -126,8 +126,6 @@
 }
 
 .menuSocialsButton{
-    width: 80px;
-    height: 80px;
     margin-right: 2rem;
     background: none;
     border: none;
@@ -138,7 +136,7 @@
 .img{
     width: 80px;
     height: 80px;
-    margin-right: 4em;
+    margin-right: 1em;
 }
 
 .menuDiv{
@@ -226,7 +224,7 @@
         padding-bottom: 1rem !important;
     }
     .menuSocialsButton{
-        margin-right: 1rem;
+        margin-right: 0rem !important;
     }
     .img{
         width: 35px;
@@ -243,10 +241,13 @@
         padding-bottom: 1rem !important;
     }
     .menuSocialsButton{
-        margin-right: 2rem;
+        margin-right: 0rem;
     }
     .menuButton{
         font-size: 40px;
+    }
+    .img{
+        width: 35px;
     }
   
 }
