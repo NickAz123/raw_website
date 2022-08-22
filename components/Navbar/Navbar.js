@@ -54,8 +54,9 @@ function Navbar({
         )}
       </div>
       <div className={styles.logoDiv}>
-        {/* <img src="../public/raw-logo.svg" /> */}
+        <img className={styles.navImg} src="./raw-logo.svg" alt="photo"></img>
       </div>
+      <div className={styles.menuFiller}></div>
     </div>
   );
 }

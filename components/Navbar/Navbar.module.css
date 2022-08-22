@@ -2,7 +2,9 @@
     height: 11em;
     width: 100%;
     top: 0px;
-    padding-left: 40px;
+
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 10px;
     padding-top: 20px;
 
@@ -16,12 +18,20 @@
 }
 
 .issueDiv{
-
     position: relative;
     display: flex;
     justify-content: center;
 
     color: var(--navbarText);
+}
+
+.navImg{
+    height: 54px;
+    padding: 5px;
+}
+
+.menuFiller{
+    width: 250px;
 }
 
 .dropdownButton {
@@ -50,7 +60,6 @@
     background-color: white;
     color: var(--primary);
 }
-
 
 .dropdownItems{
     position: absolute;
@@ -100,13 +109,74 @@
     position: absolute;
 }
 
-.logoDiv{
-}
-
 .menuDiv{
     padding-right: 10px;
 
     display: flex;
     justify-content: center;
+}
+
+/* Tablet Styling */
+@media (max-width: 900px) and (orientation: portrait){
+  
+}
+@media (max-width: 1200px) and (orientation: landscape){
+    
+}
+
+/*Phone Styling*/
+@media (max-width: 430px) and (orientation: portrait){
+    .navbar{
+        height: 5em;
+        padding-top: 10px;
+    }
+    .dropdownButton{
+        width: 200px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .menuFiller{
+        width: 200px;
+    }
+    .dropdownItems{
+        width: 200px;
+        top: 44px;
+        padding-bottom: 10px;
+    }
+    .dropdownItemsButton{
+        font-size: 17px;
+        padding-left: 12px;
+    }
+    .navImg{
+        display: none;
+    }
+  
+}
+@media (max-width: 900px) and (orientation: landscape){
+    .navbar{
+        height: 5em;
+        padding-top: 10px;
+    }
+    .dropdownButton{
+        width: 200px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .menuFiller{
+        width: 200px;
+    }
+    .dropdownItems{
+        width: 200px;
+        top: 44px;
+        padding-bottom: 10px;
+    }
+    .dropdownItemsButton{
+        font-size: 17px;
+        padding-left: 12px;
+    }
+    .navImg{
+        height: 45px;
+        padding-top: 10px;
+    }
 }
 

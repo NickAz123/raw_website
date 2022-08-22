@@ -8,7 +8,7 @@ function Footer() {
         <div>
           <img
             className={styles.footerImg}
-            src="./Raw-Logo.svg"
+            src="./raw-logo.svg"
             alt="photo"
           ></img>
         </div>
