@@ -52,14 +52,21 @@
 /* Tablet Styling */
 @media (max-width: 900px) and (orientation: portrait){
     .footerImg{
-      width: 70px;
+      width: 110px;
     }
     .footerRight{
-      font-size: 20px !important;
+      font-size: 15px !important;
       margin-top: 0px;
     }
     .footerRightPlaceholder{
       margin-top: 10px;
+      font-size: 15px;
+    }
+    .footerMiddleArchive{
+      font-size: 15px;
+    }
+    .footerMiddleAboutRAW{
+      font-size: 15px;
     }
     .footerSocials{
       margin-top: 15px;
@@ -70,7 +77,7 @@
 }
 @media (max-width: 1200px) and (orientation: landscape){
   .footerImg{
-    width: 70px;
+    width: 150px;
   }
   .footerRight{
     font-size: 20px !important;
@@ -120,5 +127,35 @@
 }
 
 @media (max-width: 900px) and (orientation: landscape){
- 
+  .footerImg{
+    width: 110px;
+    margin-top: 10px;
+  }
+  .footerCopyright{
+    font-size: 10px;
+  }
+  .footerRight{
+    font-size: 16px !important;
+    margin-top: 15px;
+  }
+  .footerRightPlaceholder{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .footerMiddleArchive{
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .footerMiddleAboutRAW{
+    font-size: 17px;
+  }
+  .footerSocials{
+    margin-top: 15px;
+  }
+  .footerSocialImg{
+    width: 25px;
+  }
+  .footerCell{
+    margin-bottom: 35px;
+  }
 }
