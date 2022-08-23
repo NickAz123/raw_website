@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
     <div className={styles.footer}>
-      <div>
+      <div className={styles.footerCell}>
         <div>
           <img
             className={styles.footerImg}
@@ -15,7 +15,7 @@ function Footer() {
         <p className={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
       </div>
 
-      <div className={styles.footerMiddle}>
+      <div className={`${styles.footerMiddle} ${styles.footerCell}`}>
         <div className={styles.footerMiddleArchive}>
           <a href="https://www.randomasswednesday.com/archive"> Archive </a>
         </div>
@@ -45,7 +45,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className={styles.footerRight}>
+      <div className={`${styles.footerRight} ${styles.footerCell}`}>
         <div>STAY RAW WITH US</div>
 
         <div className={styles.footerRightPlaceholder}>

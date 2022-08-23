@@ -4,7 +4,7 @@
 }
 
 .articleContainer{
-    font-size: 28px;
+    font-size: 32px;
 
     display: flex;
     flex-direction: column;
@@ -29,8 +29,11 @@
 }
 
 .articleContent{
-    max-width: 70%;
+    font-family: Bookmania;
+    letter-spacing: -.25px;
+    max-width: 67%;
     margin-top: 25px;
+    margin-bottom: 200px;
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -44,19 +47,22 @@
 
 .photoCredits{
     font-size: 16px;
-    margin-bottom: 5em;
+    font-family: HelveticaTitle;
+    margin-bottom: 104px;
 
     color: grey;
 }
 
 .articleCredits{
-    margin-bottom: 0.6em;
+    font-family: HelveticaTitle;
+    margin-bottom: 15px;
     display: flex;
     justify-content: flex-start;
 }
 
 .articleAuthor{
     font-size: 20px;
+    font-family: HelveticaTitle;
     font-weight: bolder;
     text-decoration: underline;
 }
@@ -64,13 +70,14 @@
     font-size: 16px;
     line-height: 200%;
     margin-left: 23px;
+    font-family: HelveticaTitle;
 
     color: grey;
     vertical-align: center;
 }
 .articleTitle{
     font-size: 90px;
-    margin-bottom: 0.5em;
+    margin-bottom: 50px;
     font-family: HelveticaTitle;
 }
 .articleSubtitle{
@@ -96,6 +103,11 @@
     font-size: 32px;
 }
 
+.lineBreak{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .season1 {
     --primary: rgba(255,0,0,1);
     --textPrimary: white;
@@ -116,27 +128,33 @@
 @media (max-width: 900px) and (orientation: portrait){
     
     .articleContainer{
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .articleContent{
-        max-width: 100% !important;
+        max-width: 90% !important;
     }
 
     .articleTitle{
         font-size: 82px;
+    }
+    .photoCredits{
+        margin-bottom: 60px;
     }
   
 }
 @media (max-width: 1200px) and (orientation: landscape){
     .articleContainer{
-        font-size: 20px;
+        font-size: 28px;
     }
     .articleContent{
-        max-width: 90% !important;
+        max-width: 80% !important;
     }
     .articleTitle{
         font-size: 82px;
+    }
+    .photoCredits{
+        margin-bottom: 60px;
     }
 }
 
@@ -147,20 +165,26 @@
     }
     .articleContent{
         max-width: 100% !important;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .articleTitle{
         font-size: 40px;
+        margin-bottom: 40px;
     }
     .photoCredits{
         margin-bottom: 15px;
         font-size: 11px;
     }
-    
     .articleAuthor{
         font-size: 15px;
     }
     .articleDate{
         font-size: 13px;
+    }
+    .lineBreak{
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 }
 
@@ -173,17 +197,21 @@
     }
     .articleTitle{
         font-size: 40px;
+        margin-bottom: 40px;
     }
     .photoCredits{
         margin-bottom: 15px;
         font-size: 11px;
     }
-    
     .articleAuthor{
         font-size: 15px;
     }
     .articleDate{
         font-size: 13px;
+    }
+    .lineBreak{
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 }
 

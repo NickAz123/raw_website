@@ -23,7 +23,20 @@ a {
   box-sizing: border-box;
 }
 
+p{
+  line-height: 165%;
+}
+
+b{
+  font-family: HelveticaTitle;
+  font-weight: 200
+}
+
 @font-face {
   font-family: 'HelveticaTitle';
   src: url('../public/fonts/HelveticaNeue-Medium.otf');
   }
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../public/fonts/BookmaniaLight.otf');
+}

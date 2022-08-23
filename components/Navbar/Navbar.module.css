@@ -1,12 +1,12 @@
 .navbar{
-    height: 11em;
+    height: 9em;
     width: 100%;
     top: 0px;
 
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 25px;
 
     position: fixed;
     display: flex;
@@ -40,7 +40,7 @@
     border-radius: 5px;
     font-size: 20px;
     width: 250px;
-    height: 60px;
+    height: 49px;
 
     text-align: center;
     text-decoration: underline;
@@ -67,7 +67,7 @@
     justify-content: center;
     flex-direction: column;
 
-    top: 53px;
+    top: 43px;
     padding-bottom: 2rem;
     border-radius: 5px;
     width: 250px;

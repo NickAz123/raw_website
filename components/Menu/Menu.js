@@ -63,7 +63,7 @@ function Menu() {
             </button>
           </a>
 
-          <a href="">
+          <a href="https://www.youtube.com/watch?v=XkKsSsTtMYU" target="_blank">
             <button className={styles.menuSocialsButton}>
               <img className={styles.img} src="./akon-logo.svg"></img>
             </button>

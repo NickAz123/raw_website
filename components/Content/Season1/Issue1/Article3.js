@@ -1,21 +1,19 @@
 import React from "react";
 import styles from "../../Content.module.css";
+import mobile from "./styles.module.css";
 
 function Article3() {
   return (
     <div className={styles.articleContainer}>
       <div className={styles.articleImgContainer}>
         <img
-          className={styles.img}
-          src="/Season1/Issue1/issue_1_article_1_img.png"
+          className={`${styles.img} ${mobile.art3Mobile}`}
+          src="/Season1/Issue1/issue_1_article_3_img.JPG"
         ></img>
       </div>
       <div className={styles.articleContent}>
         <div className={styles.photoCredits}>PHOTO BY KURT SERRANO</div>
-        <div className={styles.articleCredits}>
-          <div className={styles.articleAuthor}>Rico Reyes</div>
-          <div className={styles.articleDate}>JUL-27-2022</div>
-        </div>
+
         <div className={styles.articleTitle}>Prelude</div>
         <div className={styles.articleText}>
           <p>
@@ -32,6 +30,11 @@ function Article3() {
           </p>
           <p>Here’s Breakdown of a Breakdown.</p>
         </div>
+        <hr className={styles.lineBreak} />
+        <div className={styles.articleCredits}>
+          <div className={styles.articleAuthor}>Rico Reyes</div>
+          <div className={styles.articleDate}>JUL-27-2022</div>
+        </div>
         <div className={styles.articleTitle}>Breakdown Of A Breakdown</div>
         <div className={styles.articleText}>
           <p>
@@ -39,8 +42,14 @@ function Article3() {
               href="https://open.spotify.com/track/2TOjLvePl2m3lzzhvAzdhS?si=ad10cb02453f4939"
               target="_blank"
             >
-              <b>
-                <i>LISTEN</i>
+              <b
+                style={{
+                  textDecoration: "underline",
+                  fontFamily: "HelveticaTitle",
+                  fontWeight: 200,
+                }}
+              >
+                To listen to while reading.
               </b>
             </a>
           </p>
@@ -67,8 +76,16 @@ function Article3() {
             this show.{" "}
           </p>
 
-          <p style={{ color: "#F30B0B" }}>
-            <b>**SPOILERS AHEAD**</b>
+          <p
+            style={{
+              color: "#F30B0B",
+              fontFamily: "HelveticaTitle",
+              fontWeight: 200,
+              marginTop: 40,
+              marginBottom: 40,
+            }}
+          >
+            **SPOILERS AHEAD**
           </p>
 
           <p>

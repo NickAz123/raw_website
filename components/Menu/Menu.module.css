@@ -146,6 +146,7 @@
     right: 0;
     height: 56px;
     margin-right: 40px;
+    margin-top: 10px;
     padding-top: 20px;
 
     display: flex;
@@ -228,7 +229,7 @@
     
     .menuContainer{
         padding-left: 30px;
-        width: 250px;
+        width: 100vw;
     }
     .menuButton{
         font-size: 40px;
@@ -262,6 +263,7 @@
     }
     .menuButton{
         font-size: 40px;
+        padding-bottom: 10px;
     }
     .img{
         width: 35px;
