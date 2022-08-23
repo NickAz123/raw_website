@@ -22,3 +22,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'HelveticaTitle';
+  src: url('../public/fonts/HelveticaNeue-Medium.otf');
+  }

@@ -71,6 +71,7 @@
 .articleTitle{
     font-size: 90px;
     margin-bottom: 0.5em;
+    font-family: HelveticaTitle;
 }
 .articleSubtitle{
     font-size: 70px;
