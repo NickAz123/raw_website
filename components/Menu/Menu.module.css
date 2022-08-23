@@ -98,8 +98,9 @@
 
 .menuButton{
     font-size: 115px;
+    font-family: HelveticaTitle;
 
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     cursor: pointer;
     
     background: none;
@@ -190,22 +191,34 @@
 @media (max-width: 900px) and (orientation: portrait){
     
     .menuContainer{
-        padding-left: 30px;
-        width: 350px;
+        padding-left: 45px;
+        width: 400px;
     }
     .menuButton{
         font-size: 60px;
+    }
+    .img{
+        width: 60px;
+    }
+    .menuSocialsButton{
+        margin-right: 0.5rem;
     }
   
 }
 @media (max-width: 1200px) and (orientation: landscape){
     
     .menuContainer{
-        padding-left: 30px;
-        width: 400px;
+        padding-left: 45px;
+        width: 500px;
     }
     .menuButton{
         font-size: 80px;
+    }
+    .img{
+        width: 60px;
+    }
+    .menuSocialsButton{
+        margin-right: .7rem;
     }
   
 }
