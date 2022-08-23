@@ -16,6 +16,22 @@ function Article3() {
           <div className={styles.articleAuthor}>Rico Reyes</div>
           <div className={styles.articleDate}>JUL-27-2022</div>
         </div>
+        <div className={styles.articleTitle}>Prelude</div>
+        <div className={styles.articleText}>
+          <p>
+            What you’re about to read is one of the five newsletters of our
+            first issue of season 1. First, we would like to thank you for even
+            taking the time to click the link and start reading. We put our
+            entire heart and soul into this project and we cannot wait to show
+            everyone the results of our hard work. Lastly if you find yourself
+            thoroughly enjoying it as you read through,
+            <i>
+              &nbsp;please don’t hesitate to tell your friends and family about
+              us.
+            </i>
+          </p>
+          <p>Here’s Breakdown of a Breakdown.</p>
+        </div>
         <div className={styles.articleTitle}>Breakdown Of A Breakdown</div>
         <div className={styles.articleText}>
           <p>
@@ -139,7 +155,7 @@ function Article3() {
             There’s a lot of yelling, burns, cuts, scars and tattoos which is
             probably the forefront of what most people would see as cooks or
             chefs but it’s deeper than that. It’s the cuts and scars that people
-            <b>don’t see</b> — the trauma, the insecurities, the constant state
+            <b> don’t see</b> — the trauma, the insecurities, the constant state
             of anxiety and panic that you bear as you sweat your ass off behind
             the line. There were also a couple of small details in the show that
             made me go <i>“yup, felt that.”</i> Like when Carmy was drinking
