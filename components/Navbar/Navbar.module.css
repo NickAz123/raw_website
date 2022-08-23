@@ -128,7 +128,7 @@
 @media (max-width: 430px) and (orientation: portrait){
     .navbar{
         height: 5em;
-        padding-top: 10px;
+        padding-top: 16px;
     }
     .dropdownButton{
         width: 200px;
