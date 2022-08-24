@@ -19,13 +19,13 @@ function Article5() {
             <a
               href="https://open.spotify.com/track/0HOPZn0IFpZS142x0uClQ0?si=f63195ba1f044687"
               target="_blank"
+              rel="noreferrer"
             >
               <b>
                 <i>LISTEN</i>
               </b>
             </a>
           </p>
-
         </div>
       </div>
     </div>

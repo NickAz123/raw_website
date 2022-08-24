@@ -51,6 +51,7 @@ function Menu() {
           <a
             href="https://www.instagram.com/randomasswednesday/"
             target="_blank"
+            rel="noreferrer"
           >
             <button className={styles.menuSocialsButton}>
               <img className={styles.img} src="./instagram-logo-red.svg"></img>
@@ -63,7 +64,11 @@ function Menu() {
             </button>
           </a>
 
-          <a href="https://www.youtube.com/watch?v=XkKsSsTtMYU" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=XkKsSsTtMYU"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className={styles.menuSocialsButton}>
               <img className={styles.img} src="./akon-logo.svg"></img>
             </button>

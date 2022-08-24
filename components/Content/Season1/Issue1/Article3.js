@@ -41,6 +41,7 @@ function Article3() {
             <a
               href="https://open.spotify.com/track/2TOjLvePl2m3lzzhvAzdhS?si=ad10cb02453f4939"
               target="_blank"
+              rel="noreferrer"
             >
               <b
                 style={{

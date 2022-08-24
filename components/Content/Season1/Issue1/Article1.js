@@ -18,11 +18,12 @@ function Article1() {
         </div>
         <div className={styles.articleTitle}>Random Ass Wednesday</div>
         <div className={styles.articleText}>
-          <p>Except that we're trying to get serious.</p>
+          <p>Except that we&apos;re trying to get serious.</p>
           <p>
             <a
               href="https://open.spotify.com/track/41vSsnP46DpUZC0YoNyk3U?si=1e73fc5d0d1a4454"
               target="_blank"
+              rel="noreferrer"
             >
               <b>
                 <i>LISTEN</i>
