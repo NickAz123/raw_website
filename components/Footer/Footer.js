@@ -8,7 +8,7 @@ function Footer() {
         <div>
           <img
             className={styles.footerImg}
-            src="./raw-logo.svg"
+            src="/raw-logo.svg"
             alt="photo"
           ></img>
         </div>
@@ -29,7 +29,7 @@ function Footer() {
             <a href="https://www.instagram.com/randomasswednesday">
               <img
                 className={styles.footerSocialImg}
-                src="./instagram-logo-white.svg"
+                src="/instagram-logo-white.svg"
               ></img>
             </a>
           </div>
@@ -38,7 +38,7 @@ function Footer() {
             <a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">
               <img
                 className={styles.footerSocialImg}
-                src="./spotify-logo-white.svg"
+                src="/spotify-logo-white.svg"
               ></img>
             </a>
           </div>
