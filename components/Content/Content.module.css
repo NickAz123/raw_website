@@ -109,6 +109,10 @@
     margin-bottom: 120px;
 }
 
+.bolded{
+    font-size: 30px;
+}
+
 .season1 {
     --primary: rgba(255,0,0,1);
     --textPrimary: white;
@@ -142,6 +146,9 @@
     .photoCredits{
         margin-bottom: 60px;
     }
+    .bolded{
+        font-size: 26px;
+    }
   
 }
 @media (max-width: 1200px) and (orientation: landscape){
@@ -156,6 +163,9 @@
     }
     .photoCredits{
         margin-bottom: 60px;
+    }
+    .bolded{
+        font-size: 26px;
     }
 }
 
@@ -187,6 +197,9 @@
         margin-top: 80px;
         margin-bottom: 80px;
     }
+    .bolded{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 900px) and (orientation: landscape){
@@ -213,6 +226,9 @@
     .lineBreak{
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+    .bolded{
+        font-size: 18px;
     }
 }
 
