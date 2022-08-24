@@ -9,7 +9,7 @@ function Footer() {
           <img
             className={styles.footerImg}
             src="/raw-logo.svg"
-            alt="photo"
+            alt="RAW Logo"
           ></img>
         </div>
         <p className={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
