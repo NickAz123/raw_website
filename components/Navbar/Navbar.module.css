@@ -28,6 +28,8 @@
 .navImg{
     height: 54px;
     padding: 5px;
+
+    display: flex;
 }
 
 .menuFiller{
