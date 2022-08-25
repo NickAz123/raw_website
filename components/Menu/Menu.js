@@ -61,7 +61,7 @@ function Menu() {
           >
             <button className={styles.menuSocialsButton}>
               <div className={styles.img}>
-                <Image src={instagramRedLogo} />
+                <Image src={instagramRedLogo} alt="Instagram" />
               </div>
             </button>
           </a>
@@ -69,7 +69,7 @@ function Menu() {
           <a href="">
             <button className={styles.menuSocialsButton}>
               <div className={styles.img}>
-                <Image src={spotifyRedLogo} />
+                <Image src={spotifyRedLogo} alt="Spotify" />
               </div>
             </button>
           </a>
@@ -81,7 +81,7 @@ function Menu() {
           >
             <button className={styles.menuSocialsButton}>
               <div className={styles.img}>
-                <Image src={akonImg} />
+                <Image src={akonImg} alt="KONVICT MUZIK" />
               </div>
             </button>
           </a>

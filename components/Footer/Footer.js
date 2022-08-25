@@ -32,7 +32,7 @@ function Footer() {
           <div className={styles.menuSocialsButtonWhite}>
             <a href="https://www.instagram.com/randomasswednesday">
               <div className={styles.footerSocialImg}>
-                <Image src={instagramWhiteLogo} />
+                <Image src={instagramWhiteLogo} alt="Instagram" />
               </div>
             </a>
           </div>
@@ -40,7 +40,7 @@ function Footer() {
           <div className={styles.menuSocialsButtonWhite}>
             <a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">
               <div className={styles.footerSocialImg}>
-                <Image src={spotifyWhiteLogo} />
+                <Image src={spotifyWhiteLogo} alt="Spotify" />
               </div>
             </a>
           </div>
