@@ -4,7 +4,7 @@
 }
 
 .articleContainer{
-    font-size: 32px;
+    font-size: 24px;
 
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@
     vertical-align: center;
 }
 .articleTitle{
-    font-size: 90px;
+    font-size: 64px;
     margin-bottom: 50px;
     font-family: HelveticaTitle;
 }
@@ -110,7 +110,7 @@
 }
 
 .bolded{
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .season1 {
@@ -132,40 +132,27 @@
 /* Tablet Styling */
 @media (max-width: 900px) and (orientation: portrait){
     
-    .articleContainer{
-        font-size: 28px;
-    }
-
     .articleContent{
         max-width: 90% !important;
     }
-
     .articleTitle{
-        font-size: 82px;
+        font-size: 60px;
     }
     .photoCredits{
         margin-bottom: 60px;
-    }
-    .bolded{
-        font-size: 26px;
     }
   
 }
 @media (max-width: 1200px) and (orientation: landscape){
-    .articleContainer{
-        font-size: 28px;
-    }
+ 
     .articleContent{
         max-width: 80% !important;
     }
     .articleTitle{
-        font-size: 82px;
+        font-size: 60px;
     }
     .photoCredits{
         margin-bottom: 60px;
-    }
-    .bolded{
-        font-size: 26px;
     }
 }
 

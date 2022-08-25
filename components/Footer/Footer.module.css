@@ -14,11 +14,11 @@
 
 .footerMiddleArchive {
   margin-bottom: 15px;
-  font-size: 28px;
+  font-size: 20px;
 }
 .footerMiddleAboutRAW {
   margin-bottom: 15px;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .footerCopyright{
@@ -37,7 +37,7 @@
 }
 
 .footerRight{
-  font-size: 36px;
+  font-size: 32px;
   margin-top: 10px;
 }
 
@@ -63,16 +63,16 @@
       font-size: 15px;
     }
     .footerMiddleArchive{
-      font-size: 15px;
+      font-size: 20px;
     }
     .footerMiddleAboutRAW{
-      font-size: 15px;
+      font-size: 20px;
     }
     .footerSocials{
       margin-top: 15px;
     }
     .footerSocialImg{
-      width: 25px;
+      width: 35px;
     }
 }
 @media (max-width: 1200px) and (orientation: landscape){
@@ -82,6 +82,12 @@
   .footerRight{
     font-size: 20px !important;
     margin-top: 0px;
+  }
+  .footerMiddleArchive{
+    font-size: 20px;
+  }
+  .footerMiddleAboutRAW{
+    font-size: 20px;
   }
   .footerRightPlaceholder{
     margin-top: 10px;
@@ -113,13 +119,16 @@
     font-size: 19px;
   }
   .footerMiddleArchive{
-    margin-top: 10px;
+    margin-top: 18px;
+  }
+  .footerMiddleAboutRAW{
+    font-size: 18px;
   }
   .footerSocials{
     margin-top: 15px;
   }
   .footerSocialImg{
-    width: 25px;
+    width: 35px;
   }
   .footerCell{
     margin-bottom: 35px;
