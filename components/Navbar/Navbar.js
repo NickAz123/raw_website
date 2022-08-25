@@ -7,22 +7,20 @@ import rawLogo from "../../public/logos/raw-logo.svg";
 
 import styles from "./Navbar.module.css";
 
-function Navbar({
-  articles,
-  currentArticle,
-  setCurrentArticle,
-  season,
-  issue,
-}) {
+function Navbar(props) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
+
+  const changeArticle = (id) => {
+    props.setCurrentArticle(id);
+  };
 
   useClickOutside(ref, () => setNavDisplay(false));
 
   return (
     <div className={styles.navbar}>
       <div ref={ref} className={styles.issueDiv}>
-        {currentArticle !== null && (
+        {props.currentArticle !== null && (
           <>
             <button
               className={
@@ -32,20 +30,20 @@ function Navbar({
               }
               onClick={() => setNavDisplay(!navDisplay)}
             >
-              <span>{season.toUpperCase()} - </span>
+              <span>{props.season.toUpperCase()} - </span>
               <span>
-                <b>{issue.toUpperCase()}</b>
+                <b>{props.issue.toUpperCase()}</b>
               </span>
             </button>
             {navDisplay === true && (
               <div className={styles.dropdownItems}>
-                {articles.map((article) => {
+                {props.articles.map((article) => {
                   return (
                     <button
                       className={`${styles.dropdownItemsButton} ${
-                        currentArticle === article.id ? styles.bold : ""
+                        props.currentArticle === article.id ? styles.bold : ""
                       }`}
-                      onClick={() => setCurrentArticle(article.id)}
+                      onClick={() => changeArticle(article.id)}
                       key={article.id}
                     >
                       {article.title}
