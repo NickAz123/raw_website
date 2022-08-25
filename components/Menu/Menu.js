@@ -1,8 +1,14 @@
 import React from "react";
-import styles from "./Menu.module.css";
 import { useState, useRef } from "react";
 import { animateBurger } from "../Helpers";
 import Link from "next/link";
+import Image from "next/image";
+
+import instagramRedLogo from "../../public/social/instagram-logo-red.svg";
+import spotifyRedLogo from "../../public/social/spotify-logo-red.svg";
+import akonImg from "../../public/akon-logo.svg";
+
+import styles from "./Menu.module.css";
 
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,13 +60,17 @@ function Menu() {
             rel="noreferrer"
           >
             <button className={styles.menuSocialsButton}>
-              <img className={styles.img} src="./instagram-logo-red.svg"></img>
+              <div className={styles.img}>
+                <Image src={instagramRedLogo} />
+              </div>
             </button>
           </a>
 
           <a href="">
             <button className={styles.menuSocialsButton}>
-              <img className={styles.img} src="./spotify-logo-red.svg"></img>
+              <div className={styles.img}>
+                <Image src={spotifyRedLogo} />
+              </div>
             </button>
           </a>
 
@@ -70,7 +80,9 @@ function Menu() {
             rel="noreferrer"
           >
             <button className={styles.menuSocialsButton}>
-              <img className={styles.img} src="./akon-logo.svg"></img>
+              <div className={styles.img}>
+                <Image src={akonImg} />
+              </div>
             </button>
           </a>
         </div>

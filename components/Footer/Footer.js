@@ -1,4 +1,10 @@
 import React from "react";
+import Image from "next/image";
+
+import rawLogo from "../../public/logos/raw-logo.svg";
+import instagramWhiteLogo from "../../public/social/instagram-logo-white.svg";
+import spotifyWhiteLogo from "../../public/social/spotify-logo-white.svg";
+
 import styles from "./Footer.module.css";
 
 function Footer() {
@@ -6,11 +12,9 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerCell}>
         <div>
-          <img
-            className={styles.footerImg}
-            src="/raw-logo.svg"
-            alt="RAW Logo"
-          ></img>
+          <div className={styles.footerImg}>
+            <Image src={rawLogo} alt="RAW Logo" />
+          </div>
         </div>
         <p className={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
       </div>
@@ -27,19 +31,17 @@ function Footer() {
         <div className={styles.footerSocials}>
           <div className={styles.menuSocialsButtonWhite}>
             <a href="https://www.instagram.com/randomasswednesday">
-              <img
-                className={styles.footerSocialImg}
-                src="/instagram-logo-white.svg"
-              ></img>
+              <div className={styles.footerSocialImg}>
+                <Image src={instagramWhiteLogo} />
+              </div>
             </a>
           </div>
 
           <div className={styles.menuSocialsButtonWhite}>
             <a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">
-              <img
-                className={styles.footerSocialImg}
-                src="/spotify-logo-white.svg"
-              ></img>
+              <div className={styles.footerSocialImg}>
+                <Image src={spotifyWhiteLogo} />
+              </div>
             </a>
           </div>
         </div>

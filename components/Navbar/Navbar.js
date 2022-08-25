@@ -1,7 +1,11 @@
 import React from "react";
 import { useRef, useState } from "react";
-import styles from "./Navbar.module.css";
 import { useClickOutside } from "../Helpers.js";
+import Image from "next/image";
+
+import rawLogo from "../../public/logos/raw-logo.svg";
+
+import styles from "./Navbar.module.css";
 
 function Navbar({
   articles,
@@ -54,7 +58,9 @@ function Navbar({
         )}
       </div>
       <div className={styles.logoDiv}>
-        <img className={styles.navImg} src="/raw-logo.svg" alt="RAW Logo"></img>
+        <div className={styles.navImg}>
+          <Image src={rawLogo} alt="RAW Logo" />
+        </div>
       </div>
       <div className={styles.menuFiller}></div>
     </div>
