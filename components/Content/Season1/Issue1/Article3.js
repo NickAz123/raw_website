@@ -1,15 +1,22 @@
 import React from "react";
+import Image from "next/image";
+
+import headerPhoto from "../../../../public/Season1/Issue1/issue_1_article_3_img.JPG";
+import mobilePhoto from "../../../../public/Season1/Issue1/issue_1_article_3_mobile_img.JPG";
+
 import styles from "../../Content.module.css";
-import mobile from "./styles.module.css";
 
 function Article3() {
   return (
     <div className={styles.articleContainer}>
       <div className={styles.articleImgContainer}>
-        <img
-          className={`${styles.img} ${mobile.art3Mobile}`}
-          src="/Season1/Issue1/issue_1_article_3_img.JPG"
-        ></img>
+        <div className={styles.img}>
+          <Image src={headerPhoto} alt="BREAKDOWN OF A BREAKDOWN" priority />
+        </div>
+
+        <div className={styles.mobileImg}>
+          <Image src={mobilePhoto} alt="BREAKDOWN OF A BREAKDOWN" priority />
+        </div>
       </div>
       <div className={styles.articleContent}>
         <div className={styles.photoCredits}>PHOTO BY KURT SERRANO</div>
