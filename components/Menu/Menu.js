@@ -10,13 +10,20 @@ import akonImg from "../../public/akon-logo.svg";
 
 import styles from "./Menu.module.css";
 
-function Menu() {
+function Menu(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menu = useRef(null);
 
   const openBurger = (state, ref) => {
     setIsMenuOpen(!state);
     animateBurger(state, ref);
+  };
+
+  const buttonPress = (bool) => {
+    props.setIsAboutOpen(bool);
+    setIsMenuOpen(false);
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const menuStyle = isMenuOpen
@@ -39,9 +46,12 @@ function Menu() {
           isMenuOpen ? styles.open : styles.closed
         }`}
       >
-        <Link href="/">
-          <button className={styles.menuButton}>Issue 1</button>
-        </Link>
+        <button
+          className={styles.menuButton}
+          onClick={() => buttonPress(false)}
+        >
+          Issue 1
+        </button>
         <Link href="/archive">
           <button
             className={`${styles.menuButton} ${styles.disabled}`}
@@ -50,9 +60,9 @@ function Menu() {
             Archive
           </button>
         </Link>
-        <Link href="/about">
-          <button className={styles.menuButton}>About</button>
-        </Link>
+        <button className={styles.menuButton} onClick={() => buttonPress(true)}>
+          About
+        </button>
         <div className={styles.menuSocialsContainer}>
           <a
             href="https://www.instagram.com/randomasswednesday/"

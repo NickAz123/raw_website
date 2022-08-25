@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Bookmania, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: black;
 
@@ -25,12 +25,22 @@ a {
 
 p{
   line-height: 165%;
+  font-family: Bookmania;
+  letter-spacing: -.25px;
+  font-size: 24px;
 }
 
 b{
   font-family: HelveticaTitle;
   font-weight: 200
 }
+
+h1{
+  font-size: 64px;
+  margin-bottom: 50px;
+  font-family: HelveticaTitle;
+}
+
 
 @font-face {
   font-family: 'HelveticaTitle';
