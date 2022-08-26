@@ -33,22 +33,23 @@
 }
 
 .menuFiller{
-    min-width: 220px;
+    width: 220px;
 }
 
 .dropdownButton {
+    padding: 0px;
     border: none;
     background: none;
     border-radius: 5px;
     font-size: 20px;
-    min-width: 220px;
+    width: 250px;
     height: 57px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
     padding-bottom: 5px;
     
 
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
     text-underline-offset: 6px;
 
@@ -76,10 +77,9 @@
     top: 43px;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    padding-left: 20px;
     border-radius: 5px;
-    min-width: 220px;
-    
+    width: 250px;
+
     background-color: white;
     color: black;
 }
@@ -89,7 +89,8 @@
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 0px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     border: none;
     background: none;
@@ -141,14 +142,17 @@
         padding-top: 16px;
     }
     .dropdownButton{
-        width: 200px;
+        width: 220px;
         height: 50px;
         font-size: 17px;
     }
     .dropdownItems{
-        width: 200px;
+        width: 220px;
         top: 44px;
         padding-bottom: 10px;
+    }
+    .menuFiller{
+        width: 220px;
     }
     .dropdownItemsButton{
         font-size: 17px;
@@ -167,17 +171,20 @@
         padding-top: 10px;
     }
     .dropdownButton{
-        width: 200px;
+        width: 220px;
         height: 50px;
         font-size: 17px;
     }
     .dropdownItems{
-        width: 200px;
+        width: 220px;
         top: 44px;
         padding-bottom: 10px;
     }
     .dropdownItemsButton{
         font-size: 17px;
+    }
+    .menuFiller{
+        width: 220px;
     }
     .navImg{
         height: 45px;

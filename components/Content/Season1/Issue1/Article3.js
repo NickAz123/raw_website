@@ -19,7 +19,7 @@ function Article3() {
         </div>
       </div>
       <div className={styles.articleContent}>
-        <h4>PHOTO BY KURT SERRANO</h4>
+        <h3>PHOTO BY KURT SERRANO</h3>
 
         <h1>Prelude</h1>
         <div className={styles.articleText}>
@@ -39,8 +39,8 @@ function Article3() {
         </div>
         <hr className={styles.lineBreak} />
         <div className={styles.articleCredits}>
-          <div className={styles.articleAuthor}>Rico Reyes</div>
-          <div className={styles.articleDate}>JUL-27-2022</div>
+          <h4>Rico Reyes</h4>
+          <h5>JUL-27-2022</h5>
         </div>
         <h1>Breakdown Of A Breakdown</h1>
         <div className={styles.articleText}>
@@ -51,6 +51,7 @@ function Article3() {
               rel="noreferrer"
             >
               <b
+                className={styles.boldedListen}
                 style={{
                   textDecoration: "underline",
                   fontFamily: "HelveticaTitle",

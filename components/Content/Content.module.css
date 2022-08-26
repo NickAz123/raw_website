@@ -60,15 +60,6 @@
     font-weight: bolder;
     text-decoration: underline;
 }
-.articleDate{
-    font-size: 16px;
-    line-height: 200%;
-    margin-left: 23px;
-    font-family: HelveticaTitle;
-
-    color: grey;
-    vertical-align: center;
-}
 
 .articleSubtitle{
     font-size: 70px;
@@ -103,6 +94,10 @@
     --textPrimary: white;
     --navbarText: white;
     --menuHover: #F584BD;
+}
+
+.boldedListen{
+    font-size: 24px;
 }
 
 @keyframes fadeIn{
@@ -152,6 +147,9 @@
     .img{
         display: none;
     }
+    .boldedListen{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 900px) and (orientation: landscape){
@@ -178,5 +176,8 @@
     .lineBreak{
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+    .boldedListen{
+        font-size: 20px;
     }
 }
