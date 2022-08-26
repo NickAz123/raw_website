@@ -8,7 +8,7 @@ function About() {
       <div className={styles.infoContainer}>
         <h1>About Us</h1>
         <p>
-          <b>We're a break from our full-time jobs.</b>
+          <b>We&apos;re a break from our full-time jobs.</b>
         </p>
         <p>
           Random-Ass Wednesday is a newsletter outlet founded by Rico Reyes and
