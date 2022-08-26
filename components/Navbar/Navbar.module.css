@@ -33,7 +33,7 @@
 }
 
 .menuFiller{
-    width: 250px;
+    min-width: 220px;
 }
 
 .dropdownButton {
@@ -41,8 +41,12 @@
     background: none;
     border-radius: 5px;
     font-size: 20px;
-    width: 250px;
-    height: 49px;
+    min-width: 220px;
+    height: 57px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    
 
     text-align: center;
     text-decoration: underline;
@@ -72,8 +76,9 @@
     top: 43px;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    padding-left: 20px;
     border-radius: 5px;
-    width: 250px;
+    min-width: 220px;
     
     background-color: white;
     color: black;
@@ -81,10 +86,10 @@
 
 .dropdownItemsButton {
     width: 100%;
-    padding-left: 25px;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 0px;
 
     border: none;
     background: none;
@@ -95,7 +100,9 @@
 .bold{
     font-weight: 600;
 }
-
+.issueBold{
+    font-size: 20px;
+}
 .dropdownItemsButton:hover {
     color: white;
     background-color: var(--primary);
@@ -138,9 +145,6 @@
         height: 50px;
         font-size: 17px;
     }
-    .menuFiller{
-        width: 200px;
-    }
     .dropdownItems{
         width: 200px;
         top: 44px;
@@ -148,10 +152,12 @@
     }
     .dropdownItemsButton{
         font-size: 17px;
-        padding-left: 12px;
     }
     .navImg{
         display: none;
+    }
+    .issueBold{
+        font-size: 17px;
     }
   
 }
@@ -165,9 +171,6 @@
         height: 50px;
         font-size: 17px;
     }
-    .menuFiller{
-        width: 200px;
-    }
     .dropdownItems{
         width: 200px;
         top: 44px;
@@ -175,11 +178,13 @@
     }
     .dropdownItemsButton{
         font-size: 17px;
-        padding-left: 12px;
     }
     .navImg{
         height: 45px;
         padding-top: 10px;
+    }
+    .issueBold{
+        font-size: 17px;
     }
 }
 

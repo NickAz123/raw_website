@@ -32,7 +32,7 @@ function Navbar(props) {
             >
               <span>{props.season.toUpperCase()} - </span>
               <span>
-                <b>{props.issue.toUpperCase()}</b>
+                <b className={styles.issueBold}>{props.issue.toUpperCase()}</b>
               </span>
             </button>
             {navDisplay === true && (

@@ -47,15 +47,6 @@
     margin-right: auto;
 }
 
-.photoCredits{
-    font-size: 16px;
-    font-weight: 100;
-    font-family: HelveticaTitle;
-    margin-bottom: 104px;
-
-    color: rgb(189, 189, 189);
-}
-
 .articleCredits{
     font-family: HelveticaTitle;
     margin-bottom: 15px;
@@ -78,11 +69,7 @@
     color: grey;
     vertical-align: center;
 }
-.articleTitle{
-    font-size: 64px;
-    margin-bottom: 50px;
-    font-family: HelveticaTitle;
-}
+
 .articleSubtitle{
     font-size: 70px;
     margin-top: 0.5em;
@@ -111,10 +98,6 @@
     margin-bottom: 120px;
 }
 
-.bolded{
-    font-size: 22px;
-}
-
 .season1 {
     --primary: rgba(255,0,0,1);
     --textPrimary: white;
@@ -137,12 +120,6 @@
     .articleContent{
         max-width: 90% !important;
     }
-    .articleTitle{
-        font-size: 60px;
-    }
-    .photoCredits{
-        margin-bottom: 60px;
-    }
   
 }
 @media (max-width: 1200px) and (orientation: landscape){
@@ -150,31 +127,14 @@
     .articleContent{
         max-width: 80% !important;
     }
-    .articleTitle{
-        font-size: 60px;
-    }
-    .photoCredits{
-        margin-bottom: 60px;
-    }
 }
 
 /*Phone Styling*/
 @media (max-width: 430px) and (orientation: portrait){
-    .articleContainer{
-        font-size: 20px;
-    }
     .articleContent{
         max-width: 100% !important;
         padding-left: 30px;
         padding-right: 30px;
-    }
-    .articleTitle{
-        font-size: 40px;
-        margin-bottom: 40px;
-    }
-    .photoCredits{
-        margin-bottom: 15px;
-        font-size: 11px;
     }
     .articleAuthor{
         font-size: 15px;
@@ -185,9 +145,6 @@
     .lineBreak{
         margin-top: 80px;
         margin-bottom: 80px;
-    }
-    .bolded{
-        font-size: 18px;
     }
     .mobileImg{
         display: flex;
@@ -221,8 +178,5 @@
     .lineBreak{
         margin-top: 80px;
         margin-bottom: 80px;
-    }
-    .bolded{
-        font-size: 18px;
     }
 }

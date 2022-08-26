@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'HelveticaTitle';
+  src: url('../public/fonts/HelveticaNeue-Medium.otf');
+  }
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../public/fonts/BookmaniaLight.otf');
+}
+
 html,
 body {
   padding: 0;
@@ -38,22 +47,75 @@ p{
 }
 
 b{
+  font-size: 22px;
   font-family: HelveticaTitle;
   font-weight: 200
 }
 
+/*Article Titles*/
 h1{
   font-size: 64px;
   margin-bottom: 50px;
   font-family: HelveticaTitle;
+  font-weight: 200;
+}
+
+/* Photo Credits */
+h4{
+  font-size: 16px;
+    font-weight: 100;
+    font-family: HelveticaTitle;
+    margin-bottom: 104px;
+    color: rgb(189, 189, 189);
 }
 
 
-@font-face {
-  font-family: 'HelveticaTitle';
-  src: url('../public/fonts/HelveticaNeue-Medium.otf');
+/*tablet styling*/
+@media (max-width: 900px) and (orientation: portrait){
+  h1{
+    font-size: 60px;
   }
-@font-face {
-  font-family: 'Bookmania';
-  src: url('../public/fonts/BookmaniaLight.otf');
+  h4{
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+ 
+  h1{
+    font-size: 60px;
+  }
+  h4{
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 430px) and (orientation: portrait){
+  p{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  h4{
+    margin-bottom: 15px;
+    font-size: 11px;
+  }
+  b{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape){
+ p{
+  font-size: 20px;
+ } 
+ h1{
+  font-size: 40px;
+  margin-bottom: 40px;
+ }
+ b{
+  font-size: 18px;
+ }
 }
