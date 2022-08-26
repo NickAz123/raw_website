@@ -1,0 +1,27 @@
+.aboutContainer{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: 1s ease-in-out fadeIn;
+}
+
+.infoContainer{
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

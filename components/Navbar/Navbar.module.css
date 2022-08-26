@@ -33,18 +33,23 @@
 }
 
 .menuFiller{
-    width: 250px;
+    width: 220px;
 }
 
 .dropdownButton {
+    padding: 0px;
     border: none;
     background: none;
     border-radius: 5px;
     font-size: 20px;
     width: 250px;
-    height: 49px;
+    height: 57px;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    padding-bottom: 5px;
+    
 
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
     text-underline-offset: 6px;
 
@@ -74,17 +79,18 @@
     padding-bottom: 2rem;
     border-radius: 5px;
     width: 250px;
-    
+
     background-color: white;
     color: black;
 }
 
 .dropdownItemsButton {
     width: 100%;
-    padding-left: 25px;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     border: none;
     background: none;
@@ -95,7 +101,9 @@
 .bold{
     font-weight: 600;
 }
-
+.issueBold{
+    font-size: 20px;
+}
 .dropdownItemsButton:hover {
     color: white;
     background-color: var(--primary);
@@ -134,24 +142,26 @@
         padding-top: 16px;
     }
     .dropdownButton{
-        width: 200px;
+        width: 220px;
         height: 50px;
         font-size: 17px;
     }
-    .menuFiller{
-        width: 200px;
-    }
     .dropdownItems{
-        width: 200px;
+        width: 220px;
         top: 44px;
         padding-bottom: 10px;
     }
+    .menuFiller{
+        width: 220px;
+    }
     .dropdownItemsButton{
         font-size: 17px;
-        padding-left: 12px;
     }
     .navImg{
         display: none;
+    }
+    .issueBold{
+        font-size: 17px;
     }
   
 }
@@ -161,25 +171,27 @@
         padding-top: 10px;
     }
     .dropdownButton{
-        width: 200px;
+        width: 220px;
         height: 50px;
         font-size: 17px;
     }
-    .menuFiller{
-        width: 200px;
-    }
     .dropdownItems{
-        width: 200px;
+        width: 220px;
         top: 44px;
         padding-bottom: 10px;
     }
     .dropdownItemsButton{
         font-size: 17px;
-        padding-left: 12px;
+    }
+    .menuFiller{
+        width: 220px;
     }
     .navImg{
         height: 45px;
         padding-top: 10px;
+    }
+    .issueBold{
+        font-size: 17px;
     }
 }
 

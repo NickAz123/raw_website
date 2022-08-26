@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'HelveticaTitle';
+  src: url('../public/fonts/HelveticaNeue-Medium.otf');
+  }
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../public/fonts/BookmaniaLight.otf');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Bookmania, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: black;
 
@@ -12,6 +21,50 @@ body {
   --phonePortrait: 430px;
   --phoneLandscape: 900px;
 
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+/*Article Titles*/
+h1{
+  margin: 0px;
+  font-size: 64px;
+  margin-bottom: 50px;
+  font-family: HelveticaTitle;
+  font-weight: 200;
+}
+/* Photo Credits */
+h3{
+  margin: 0px;
+  font-size: 16px;
+    font-weight: 100;
+    font-family: HelveticaTitle;
+    margin-bottom: 104px;
+    color: rgb(189, 189, 189);
+}
+/*Article Author*/
+h4{
+  font-size: 20px;
+  font-family: HelveticaTitle;
+  font-weight: bolder;
+  text-decoration: underline;
+  margin: 0px;
+}
+/*Article Date*/
+h5{
+  margin: 0px;
+  font-size: 16px;
+  line-height: 200%;
+  margin-left: 23px;
+  font-family: HelveticaTitle;
+
+  color: grey;
+  vertical-align: center;
 }
 
 a {
@@ -25,18 +78,79 @@ a {
 
 p{
   line-height: 165%;
+  font-family: Bookmania;
+  letter-spacing: -.25px;
+  font-size: 24px;
 }
 
 b{
+  font-size: 22px;
   font-family: HelveticaTitle;
   font-weight: 200
 }
 
-@font-face {
-  font-family: 'HelveticaTitle';
-  src: url('../public/fonts/HelveticaNeue-Medium.otf');
+
+/*tablet styling*/
+@media (max-width: 900px) and (orientation: portrait){
+  h1{
+    font-size: 60px;
+  }h3{
+    margin-bottom: 60px;
   }
-@font-face {
-  font-family: 'Bookmania';
-  src: url('../public/fonts/BookmaniaLight.otf');
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+ 
+  h1{
+    font-size: 60px;
+  }
+  h3{
+    margin-bottom: 60px;
+  }
+}
+
+/*Phone Styling*/
+@media (max-width: 430px) and (orientation: portrait){
+  p{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  h3{
+    font-size: 11px;
+    margin-bottom :15px;
+  }
+  h4{
+    font-size: 15px;
+  }
+  h5{
+    font-size: 13px;
+   }
+  b{
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) and (orientation: landscape){
+ p{
+  font-size: 20px;
+ } 
+ h1{
+  font-size: 40px;
+  margin-bottom: 40px;
+ }
+ h3{
+  font-size: 11px;
+  margin-bottom: 15px;
+ }
+ h4{
+  font-size: 15px;
+ }
+ h5{
+  font-size: 13px;
+ }
+ b{
+  font-size: 18px;
+ }
 }

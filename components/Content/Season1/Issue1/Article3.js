@@ -19,9 +19,9 @@ function Article3() {
         </div>
       </div>
       <div className={styles.articleContent}>
-        <div className={styles.photoCredits}>PHOTO BY KURT SERRANO</div>
+        <h3>PHOTO BY KURT SERRANO</h3>
 
-        <div className={styles.articleTitle}>Prelude</div>
+        <h1>Prelude</h1>
         <div className={styles.articleText}>
           <p>
             What you’re about to read is one of the five newsletters of our
@@ -39,10 +39,10 @@ function Article3() {
         </div>
         <hr className={styles.lineBreak} />
         <div className={styles.articleCredits}>
-          <div className={styles.articleAuthor}>Rico Reyes</div>
-          <div className={styles.articleDate}>JUL-27-2022</div>
+          <h4>Rico Reyes</h4>
+          <h5>JUL-27-2022</h5>
         </div>
-        <div className={styles.articleTitle}>Breakdown Of A Breakdown</div>
+        <h1>Breakdown Of A Breakdown</h1>
         <div className={styles.articleText}>
           <p>
             <a
@@ -51,6 +51,7 @@ function Article3() {
               rel="noreferrer"
             >
               <b
+                className={styles.boldedListen}
                 style={{
                   textDecoration: "underline",
                   fontFamily: "HelveticaTitle",
@@ -67,7 +68,7 @@ function Article3() {
             the harsh, unfiltered, soul-crushing realities of what could be
             happening behind the counters of our favorite restaurants. It’s the
             perfect mix for reality with a dramatic pinch of exaggeration.
-            <b className={styles.bolded}>
+            <b>
               {" "}
               I’m not here to give a review on the show, I’m here to simply just
               talk about it.&nbsp;
@@ -113,12 +114,10 @@ function Article3() {
           <p>
             As I was watching, I caught myself getting distracted or pausing
             because I couldn’t bear to look at what was and is familiar to me.
-            Whether it was the constant yelling of{" "}
-            <b className={styles.bolded}>“BEHIND”</b> or{" "}
-            <b className={styles.bolded}>“CORNER”</b>, drinking water out of
-            liter containers, the importance of family/staff meals, the immense
-            amount of cigarettes, and that one guy that just knows how to fix
-            things.{" "}
+            Whether it was the constant yelling of <b>“BEHIND”</b> or{" "}
+            <b>“CORNER”</b>, drinking water out of liter containers, the
+            importance of family/staff meals, the immense amount of cigarettes,
+            and that one guy that just knows how to fix things.{" "}
           </p>
 
           <p>
@@ -140,17 +139,15 @@ function Article3() {
             a nice pocket of cooks and chefs with incredible taste. You can see
             Carmy’s work uniform starting with his Birkenstock Tokio Super Grips
             paired with not just any white t-shirt, but it’s gotta be either{" "}
-            <b className={styles.bolded}>
-              Velva Sheen, Shwanen, or Whitesville
-            </b>{" "}
-            noticing that Carmy’s t-shirt had a tubular fit on it. We’re talking
-            $300 in work uniforms.
+            <b>Velva Sheen, Shwanen, or Whitesville</b> noticing that Carmy’s
+            t-shirt had a tubular fit on it. We’re talking $300 in work
+            uniforms.
           </p>
 
           <p>
-            <b className={styles.bolded}>It’s triggering, yet cathartic.</b>{" "}
-            Triggering because last summer I wanted k*ll myself, cathartic
-            because it was comforting to know that I wasn’t alone.
+            <b>It’s triggering, yet cathartic.</b> Triggering because last
+            summer I wanted k*ll myself, cathartic because it was comforting to
+            know that I wasn’t alone.
           </p>
 
           <p>
@@ -172,35 +169,32 @@ function Article3() {
             Cathartic because it provided me comfort knowing that everyone was
             going through it, everyone was a ticking time-bomb awaiting to break
             loose. I was at the restaurant more than I was at home, I saw my
-            team more than I saw my family;{" "}
-            <b className={styles.bolded}>these cooks became my family.</b> At
-            this point, I felt an intense growth in camaraderie and trust that
-            was built during this season in my life. Comforting because this is
-            a specific experience that I can only share with my peers and
-            superiors who were with me during this season. Comforting because
-            this is an experience only a few can relate to.
+            team more than I saw my family; <b>these cooks became my family.</b>{" "}
+            At this point, I felt an intense growth in camaraderie and trust
+            that was built during this season in my life. Comforting because
+            this is a specific experience that I can only share with my peers
+            and superiors who were with me during this season. Comforting
+            because this is an experience only a few can relate to.
           </p>
 
           <p>
             There’s a lot of yelling, burns, cuts, scars and tattoos which is
             probably the forefront of what most people would see as cooks or
             chefs but it’s deeper than that. It’s the cuts and scars that people
-            <b className={styles.bolded}> don’t see</b> — the trauma, the
-            insecurities, the constant state of anxiety and panic that you bear
-            as you sweat your ass off behind the line. There were also a couple
-            of small details in the show that made me go{" "}
-            <i>“yup, felt that.”</i> Like when Carmy was drinking water out of a
-            liter container or when he made himself a “whatever’s in my fridge
-            sandwich” and called it a night. Details like this bring me so much
-            comfort because there’s so much more to restaurant life than just
-            cooking. When you watch The Bear, you’re watching an authentic
-            depiction of the literal day in the life of a cook.
+            <b> don’t see</b> — the trauma, the insecurities, the constant state
+            of anxiety and panic that you bear as you sweat your ass off behind
+            the line. There were also a couple of small details in the show that
+            made me go <i>“yup, felt that.”</i> Like when Carmy was drinking
+            water out of a liter container or when he made himself a “whatever’s
+            in my fridge sandwich” and called it a night. Details like this
+            bring me so much comfort because there’s so much more to restaurant
+            life than just cooking. When you watch The Bear, you’re watching an
+            authentic depiction of the literal day in the life of a cook.
           </p>
 
           <p>
-            With that said, <b className={styles.bolded}>cooks are cool.</b> But
-            a lot of us are also{" "}
-            <b className={styles.bolded}>mentally deranged.</b>
+            With that said, <b>cooks are cool.</b> But a lot of us are also{" "}
+            <b>mentally deranged.</b>
           </p>
 
           <p>Signing off, </p>
