@@ -12,6 +12,10 @@
   font-family: HelveticaTitle;
 }
 
+.footerImg{
+  width: 200px;
+}
+
 .footerMiddleArchive {
   margin-bottom: 15px;
   font-size: 20px;

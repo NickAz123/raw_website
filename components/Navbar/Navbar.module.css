@@ -14,7 +14,7 @@
     z-index: 100;
 
     color: var(--navbarText);
-    background: linear-gradient(180deg, var(--primary) 0%, rgba(255,255,2550, 0) 100%);
+    background: linear-gradient(180deg, var(--primary) 0%, rgba(255,255,2550, 0) 85%);
 }
 
 .issueDiv{
@@ -24,9 +24,12 @@
 
     color: var(--navbarText);
 }
+.logoDiv{
+    width: 150px;
+}
 
 .navImg{
-    height: 54px;
+    height: 80px;
     padding: 5px;
 
     display: flex;
@@ -132,10 +135,20 @@
 
 /* Tablet Styling */
 @media (max-width: 900px) and (orientation: portrait){
-  
+    .navbar{
+        background: linear-gradient(180deg, var(--primary) 0%, rgba(255,255,2550, 0) 100%);
+    }
+    .navImg{
+        height: 58px;
+    }
 }
 @media (max-width: 1200px) and (orientation: landscape){
-    
+    .navbar{
+        background: linear-gradient(180deg, var(--primary) 0%, rgba(255,255,2550, 0) 100%);
+    }
+    .navImg{
+        height: 58px;
+    }
 }
 
 /*Phone Styling*/

@@ -28,7 +28,7 @@ export default function Home() {
           name="description"
           content="A break away from our full-time jobs."
         />
-        <link rel="icon" href="/raw-browser-icon.svg" />
+        <link rel="icon" href="/raw-favicon.svg" />
       </Head>
       <div
         className={`${styles.mainContainer} ${

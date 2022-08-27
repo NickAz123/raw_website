@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import headerPhoto from "../../public/issue1/about_us_img.JPG";
+import headerPhoto from "../../public/issue1/about_us_img.png";
 import mobilePhoto from "../../public/issue1/about_us_mobile_img.JPG";
 
 import aboutStyles from "./About.module.css";
