@@ -11,10 +11,8 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.footerCell}>
-        <div>
-          <div className={styles.footerImg}>
-            <Image src={rawLogo} alt="RAW Logo" />
-          </div>
+        <div className={styles.footerImg}>
+          <Image src={rawLogo} alt="RAW Logo" />
         </div>
         <p className={styles.footerCopyright}>©Random Ass Wednesday 2022</p>
       </div>
@@ -38,7 +36,7 @@ function Footer() {
           </div>
 
           <div className={styles.menuSocialsButtonWhite}>
-            <a href="https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV">
+            <a href="https://open.spotify.com/playlist/5qhIkYo7CoWi3aRlU8OWgs">
               <div className={styles.footerSocialImg}>
                 <Image src={spotifyWhiteLogo} alt="Spotify" />
               </div>

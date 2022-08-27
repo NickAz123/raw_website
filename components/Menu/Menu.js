@@ -76,7 +76,11 @@ function Menu(props) {
             </button>
           </a>
 
-          <a href="">
+          <a
+            href="https://open.spotify.com/playlist/5qhIkYo7CoWi3aRlU8OWgs"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className={styles.menuSocialsButton}>
               <div className={styles.img}>
                 <Image src={spotifyRedLogo} alt="Spotify" />

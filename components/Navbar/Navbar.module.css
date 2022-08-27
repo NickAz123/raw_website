@@ -33,7 +33,7 @@
 }
 
 .menuFiller{
-    width: 220px;
+    width: 250px;
 }
 
 .dropdownButton {
@@ -48,20 +48,24 @@
     padding-right:1.5rem;
     padding-bottom: 5px;
     
-
+    font-family: HelveticaTitle;
     text-align: left;
     text-decoration: underline;
     text-underline-offset: 6px;
 
     color: var(--navbarText);
 }
-.closed{
-    color: var(--navbarText);
+
+.seasonSpan{
+    font-family: Bookmania;
 }
 
 .dropdownButton:hover {
     background-color: white;
     color: var(--primary);
+}
+.closed{
+    color: var(--navbarText);
 }
 .open{
     background-color: white;
@@ -108,7 +112,6 @@
     color: white;
     background-color: var(--primary);
 }
-
 
 .issueTitle{
     font-size: 20px;
