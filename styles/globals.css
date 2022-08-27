@@ -59,12 +59,11 @@ h4{
 h5{
   margin: 0px;
   font-size: 16px;
-  line-height: 200%;
+  line-height: 180%;
   margin-left: 23px;
   font-family: HelveticaTitle;
 
   color: grey;
-  vertical-align: center;
 }
 
 a {

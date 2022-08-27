@@ -40,7 +40,7 @@ function Article3() {
         <hr className={styles.lineBreak} />
         <div className={styles.articleCredits}>
           <h4>Rico Reyes</h4>
-          <h5>JUL-27-2022</h5>
+          <h5>AUG-27-2022</h5>
         </div>
         <h1>Breakdown Of A Breakdown</h1>
         <div className={styles.articleText}>
