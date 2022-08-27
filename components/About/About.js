@@ -1,11 +1,24 @@
 import React from "react";
+import Image from "next/image";
 
-import styles from "./About.module.css";
+import headerPhoto from "../../public/issue1/about_us_img.JPG";
+import mobilePhoto from "../../public/issue1/about_us_mobile_img.JPG";
+
+import aboutStyles from "./About.module.css";
+import styles from "../Content/Content.module.css";
 
 function About() {
   return (
-    <div className={styles.aboutContainer}>
-      <div className={styles.infoContainer}>
+    <div className={styles.articleContainer}>
+      <div className={styles.articleImgContainer}>
+        <div className={styles.img}>
+          <Image src={headerPhoto} alt="RANDOM ASS WEDNESDAYS" priority></Image>
+        </div>
+        <div className={styles.mobileImg}>
+          <Image src={mobilePhoto} alt="RANDOM ASS WEDNESDAYS" priority />
+        </div>
+      </div>
+      <div className={styles.articleContent}>
         <h1>About Us</h1>
         <p>
           <b>We&apos;re a break from our full-time jobs.</b>
