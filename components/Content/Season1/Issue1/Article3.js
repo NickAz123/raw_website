@@ -58,7 +58,7 @@ function Article3() {
                   fontWeight: 200,
                 }}
               >
-                To listen to while reading.
+                To listen to while reading
               </b>
             </a>
           </p>

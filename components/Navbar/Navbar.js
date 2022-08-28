@@ -12,7 +12,12 @@ function Navbar(props) {
   const ref = useRef(null);
 
   const changeArticle = (id) => {
+    if (id != props.currentArticle || props.isAboutOpen) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     props.setCurrentArticle(id);
+    props.setIsAboutOpen(false);
   };
 
   useClickOutside(ref, () => setNavDisplay(false));
