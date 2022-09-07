@@ -19,7 +19,10 @@ function Content(props) {
         currentArticle={props.currentArticle}
         setCurrentArticle={props.setCurrentArticle}
       /> */}
-      <Footer />
+      <Footer
+        isAboutOpen={props.isAboutOpen}
+        setIsAboutOpen={props.setIsAboutOpen}
+      />
     </div>
   );
 }

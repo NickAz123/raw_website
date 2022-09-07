@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #1E1E1E;
   color: white;
   padding-top: 6em;
@@ -16,10 +16,16 @@
   width: 200px;
 }
 
+.footerMiddle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .footerMiddleArchive {
   margin-bottom: 15px;
   font-size: 20px;
 }
+
 .footerMiddleAboutRAW {
   margin-bottom: 15px;
   font-size: 20px;
@@ -80,6 +86,9 @@
     }
 }
 @media (max-width: 1200px) and (orientation: landscape){
+  .footer{
+    padding: 50px;
+  }
   .footerImg{
     width: 150px;
   }
