@@ -7,7 +7,7 @@ import spotifyWhiteLogo from "../../public/social/spotify-logo-white.svg";
 
 import styles from "./Footer.module.css";
 
-function Footer() {
+function Footer(props) {
   return (
     <div className={styles.footer}>
       <div className={styles.footerCell}>
@@ -18,12 +18,14 @@ function Footer() {
       </div>
 
       <div className={`${styles.footerMiddle} ${styles.footerCell}`}>
-        <div className={styles.footerMiddleArchive}>
+        {/* <div className={styles.footerMiddleArchive}>
           <a href="https://www.randomasswednesday.com/archive"> Archive </a>
-        </div>
+        </div> */}
 
         <div className={styles.footerMiddleAboutRAW}>
-          <a href="https://www.randomasswednesday.com/aboutRAW"> About RAW </a>
+          <a href="#" onClick={() => props.setIsAboutOpen(true)}>
+            About RAW
+          </a>
         </div>
 
         <div className={styles.footerSocials}>

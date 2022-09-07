@@ -51,6 +51,7 @@ export default function Home() {
           currentArticle={currentArticle}
           setCurrentArticle={setCurrentArticle}
           isAboutOpen={isAboutOpen}
+          setIsAboutOpen={setIsAboutOpen}
         />
         <Menu setIsAboutOpen={setIsAboutOpen} />
       </div>
