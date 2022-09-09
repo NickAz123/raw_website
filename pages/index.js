@@ -9,7 +9,7 @@ import seasonStyles from "../components/Content/Content.module.css";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const [currentIssue, setCurrentIssue] = useState(content["Issues"]["Issue1"]);
+  const [currentIssue, setCurrentIssue] = useState(content["Issue1"]);
   const [currentArticle, setCurrentArticle] = useState();
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
