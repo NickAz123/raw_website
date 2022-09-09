@@ -35,11 +35,9 @@ function Navbar(props) {
               }
               onClick={() => setNavDisplay(!navDisplay)}
             >
-              <span className={styles.seasonSpan}>
-                {props.season.toUpperCase()} -{" "}
-              </span>
+              <span className={styles.seasonSpan}>SEASON 1 - </span>
               <span>
-                <b className={styles.issueBold}>{props.issue.toUpperCase()}</b>
+                <b className={styles.issueBold}>ISSUE 1</b>
               </span>
             </button>
             {navDisplay === true && (
