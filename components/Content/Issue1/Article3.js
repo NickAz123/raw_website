@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import headerPhoto from "../../../../public/issue1/issue_1_article_3_img.JPG";
-import mobilePhoto from "../../../../public/issue1/issue_1_article_3_mobile_img.JPG";
+import headerPhoto from "../../../public/issue1/issue_1_article_3_img.JPG";
+import mobilePhoto from "../../../public/issue1/issue_1_article_3_mobile_img.JPG";
 
-import styles from "../../Content.module.css";
+import styles from "../Content.module.css";
 
 function Article3() {
   return (
