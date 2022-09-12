@@ -11,8 +11,14 @@ function Navbar(props) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
 
-  const changeArticle = (id, setCurrentArticle, setIsAboutOpen) => {
-    if (id != props.currentArticle || props.isAboutOpen) {
+  const changeArticle = (
+    id,
+    setCurrentArticle,
+    setIsAboutOpen,
+    currentArticle,
+    isAboutOpen
+  ) => {
+    if (id != currentArticle || isAboutOpen) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
@@ -52,7 +58,9 @@ function Navbar(props) {
                         changeArticle(
                           article.id,
                           props.setCurrentArticle,
-                          props.setIsAboutOpen
+                          props.setIsAboutOpen,
+                          props.currentArticle,
+                          props.isAboutOpen
                         )
                       }
                       key={article.id}
