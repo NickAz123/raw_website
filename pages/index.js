@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
+
 import Navbar from "../components/Navbar/Navbar";
 import Content from "../components/Content/Content";
 import content from "../components/Content/Content.json";
@@ -9,10 +10,7 @@ import seasonStyles from "../components/Content/Content.module.css";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const [currentSeason, setCurrentSeason] = useState(content["Season1"]);
-  const [currentIssue, setCurrentIssue] = useState(
-    currentSeason["Issues"]["Issue1"]
-  );
+  const [currentIssue, setCurrentIssue] = useState(content["Issue1"]);
   const [currentArticle, setCurrentArticle] = useState();
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
@@ -30,23 +28,16 @@ export default function Home() {
         />
         <link rel="icon" href="/raw-favicon.svg" />
       </Head>
-      <div
-        className={`${styles.mainContainer} ${
-          seasonStyles[currentSeason.styles]
-        }`}
-      >
+      <div className={`${styles.mainContainer} ${seasonStyles.seasonStyles}`}>
         <Navbar
           articles={currentIssue.Articles}
           setCurrentArticle={setCurrentArticle}
-          season={currentSeason["season"]}
-          issue={currentIssue["issue"]}
           currentArticle={currentArticle}
           setIsAboutOpen={setIsAboutOpen}
           isAboutOpen={isAboutOpen}
         />
         <Content
           currentIssue={currentIssue}
-          season={currentSeason["season"]}
           issue={currentIssue["issue"]}
           currentArticle={currentArticle}
           setCurrentArticle={setCurrentArticle}

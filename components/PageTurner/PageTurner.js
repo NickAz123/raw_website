@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
 import styles from "./PageTurner.module.css";
 
 function PageTurner(props) {
@@ -8,23 +9,28 @@ function PageTurner(props) {
   const articlesAr = props.currentIssue["Articles"];
   const totalArticles = articlesAr.length;
 
-  const getNextArticleName = (currentId, next = true, last = false) => {
+  const getNextArticleName = (
+    currentId,
+    next = true,
+    last = false,
+    currentIssue
+  ) => {
     if (last) {
-      return props.currentIssue["Articles"][currentId]["title"];
+      return currentIssue["Articles"][currentId]["title"];
     } else {
       if (next) {
-        return props.currentIssue["Articles"]["title"];
+        return currentIssue["Articles"]["title"];
       } else {
-        return props.currentIssue["Articles"]["title"];
+        return currentIssue["Articles"]["title"];
       }
     }
   };
 
-  const changeArticle = (id, goForward) => {
+  const changeArticle = (id, goForward, setCurrentArticle) => {
     if (goForward) {
-      props.setCurrentArticle(id + 1);
+      setCurrentArticle(id + 1);
     } else {
-      props.setCurrentArticle(id - 1);
+      setCurrentArticle(id - 1);
     }
 
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -49,20 +55,28 @@ function PageTurner(props) {
         </div>
 
         <div className={styles.sideBtnName}>
-          {getNextArticleName(arrayId, false, arrayId === 0 ? true : false)}
+          {getNextArticleName(
+            arrayId,
+            false,
+            arrayId === 0 ? true : false,
+            props.currentIssue
+          )}
         </div>
       </div>
       <div
         className={`${styles.sideBtn} ${
           arrayId === totalArticles - 1 ? `${styles.btnDisabled}` : ""
         }`}
-        onClick={() => changeArticle(props.currentArticle, true)}
+        onClick={() =>
+          changeArticle(props.currentArticle, true, props.setCurrentArticle)
+        }
       >
         <div className={styles.sideBtnName}>
           {getNextArticleName(
             arrayId,
             true,
-            arrayId === totalArticles - 1 ? true : false
+            arrayId === totalArticles - 1 ? true : false,
+            props.currentIssue
           )}
         </div>
         <div className={styles.sideBtnArrow}>

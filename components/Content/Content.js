@@ -1,17 +1,18 @@
 import React from "react";
 
-import Season1 from "./Season1/Season1";
 import Footer from "../Footer/Footer";
 import PageTurner from "../PageTurner/PageTurner";
 import About from "../About/About";
+
+import Issue1 from "../Content/Issue1/Issue1";
 
 import styles from "./Content.module.css";
 
 function Content(props) {
   return (
     <div className={styles.contentContainer}>
-      {props.season === "season 1" && props.isAboutOpen === false && (
-        <Season1 issue={props.issue} articleid={props.currentArticle} />
+      {props.isAboutOpen === false && props.issue === "issue 1" && (
+        <Issue1 articleid={props.currentArticle} />
       )}
       {props.isAboutOpen && <About />}
       {/* <PageTurner

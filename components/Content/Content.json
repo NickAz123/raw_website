@@ -1,20 +1,11 @@
 {
-    "Season1": {
-        "season":"season 1",
-        "logo": "",
-        "styles": "season1",
-        "Issues" : {
-            "Issue1" : {
-                "issue": "issue 1",
-                "Articles": [
-                    {
-                        "title": "Breakdown Of A Breakdown",
-                        "id": 0
-                    }
-                ]
+    "Issue1" : {
+        "issue": "issue 1",
+        "Articles": [
+            {
+                "title": "Breakdown Of A Breakdown",
+                "id": 0
             }
-        }
-
+        ]
     }
-
 }
