@@ -11,13 +11,13 @@ function Navbar(props) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
 
-  const changeArticle = (id) => {
+  const changeArticle = (id, setCurrentArticle, setIsAboutOpen) => {
     if (id != props.currentArticle || props.isAboutOpen) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    props.setCurrentArticle(id);
-    props.setIsAboutOpen(false);
+    setCurrentArticle(id);
+    setIsAboutOpen(false);
   };
 
   useClickOutside(ref, () => setNavDisplay(false));
@@ -48,7 +48,13 @@ function Navbar(props) {
                       className={`${styles.dropdownItemsButton} ${
                         props.currentArticle === article.id ? styles.bold : ""
                       }`}
-                      onClick={() => changeArticle(article.id)}
+                      onClick={() =>
+                        changeArticle(
+                          article.id,
+                          props.setCurrentArticle,
+                          props.setIsAboutOpen
+                        )
+                      }
                       key={article.id}
                     >
                       {article.title}

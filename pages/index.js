@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
+
 import Navbar from "../components/Navbar/Navbar";
 import Content from "../components/Content/Content";
 import content from "../components/Content/Content.json";
