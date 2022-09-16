@@ -2,23 +2,27 @@ import React from "react";
 import styles from "../Content.module.css";
 import Image from "next/future/image";
 
+import headerPhoto from "../../../public/issue1/about_us_img.png";
+import mobilePhoto from "../../../public/issue1/about_us_mobile_img.JPG";
+
 function Article1() {
   return (
     <div className={styles.articleContainer}>
       <div className={styles.articleImgContainer}>
-        <Image
-          style={styles.img}
-          src="/Season1/Issue1/issue_1_article_1_img.png"
-          fill
-        />
+        <div className={styles.img}>
+          <Image src={headerPhoto} alt="RANDOM-ASS WEDNESDAYS" priority />
+        </div>
+        <div className={styles.mobileImg}>
+          <Image src={mobilePhoto} alt="RANDOM-ASS WEDNESDAYS" priority />
+        </div>
       </div>
       <div className={styles.articleContent}>
-        <div className={styles.photoCredits}>PHOTO BY KURT SERRANO</div>
+        <h3>PHOTO BY KURT SERRANO</h3>
         <div className={styles.articleCredits}>
-          <div className={styles.articleAuthor}>Rico Reyes</div>
-          <div className={styles.articleDate}>JUN-27-2022</div>
+          <h4>Rico Reyes</h4>
+          <h5>AUG-27-2022</h5>
         </div>
-        <div className={styles.articleTitle}>Random Ass Wednesday</div>
+        <div className={styles.articleTitle}>Random-Ass Wednesday</div>
         <div className={styles.articleText}>
           <p>Except that we&apos;re trying to get serious.</p>
           <p>

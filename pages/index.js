@@ -15,7 +15,7 @@ export default function Home() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
   useEffect(() => {
-    setCurrentArticle(0);
+    setCurrentArticle(3);
   }, []);
 
   return (
