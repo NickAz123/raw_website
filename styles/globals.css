@@ -38,6 +38,13 @@ h1{
   font-family: HelveticaTitle;
   font-weight: 200;
 }
+h2{
+  margin: 0px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-family: HelveticaTitle;
+  font-weight: 200;
+}
 /* Photo Credits */
 h3{
   margin: 0px;
