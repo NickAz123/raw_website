@@ -68,39 +68,15 @@ function Article2() {
             intake at around 8PM and met a couple of my colleagues there.
           </p>
 
-          <p
-            style={{
-              color: "#F30B0B",
-              fontFamily: "HelveticaTitle",
-              fontWeight: 200,
-              marginTop: 40,
-              marginBottom: 40,
-            }}
-          >
+          <p className="quote">
             <i>“Could I bum a stick off you? I left mine inside.”</i>
           </p>
 
-          <p
-            style={{
-              color: "#F30B0B",
-              fontFamily: "HelveticaTitle",
-              fontWeight: 200,
-              marginTop: 40,
-              marginBottom: 40,
-            }}
-          >
+          <p className="quote">
             <i>“Don’t you owe me, like 15? Anyway, here.”</i>
           </p>
 
-          <p
-            style={{
-              color: "#F30B0B",
-              fontFamily: "HelveticaTitle",
-              fontWeight: 200,
-              marginTop: 40,
-              marginBottom: 40,
-            }}
-          >
+          <p className="quote">
             <i>“Could I also borrow a light?”</i>
           </p>
 

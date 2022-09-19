@@ -95,6 +95,14 @@ b{
   font-weight: 200
 }
 
+.quote{
+  font-family: HelveticaTitle;
+  color: #F30B0B;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 
 /*tablet styling*/
 @media (max-width: 900px) and (orientation: portrait){
