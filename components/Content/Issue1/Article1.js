@@ -78,7 +78,6 @@ function Article1() {
           </p>
           <p>To those who got this far, thank you.</p>
           <p>This is Season 1.</p>
-          <br />
           <p>With respect, </p>
           <p>Random Ass Wednesday</p>
         </div>

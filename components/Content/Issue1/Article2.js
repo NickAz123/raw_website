@@ -68,15 +68,15 @@ function Article2() {
             intake at around 8PM and met a couple of my colleagues there.
           </p>
 
-          <p className="quote">
+          <p className="quote" style={{ marginLeft: 0 }}>
             <i>“Could I bum a stick off you? I left mine inside.”</i>
           </p>
 
-          <p className="quote">
+          <p className="quote" style={{ marginLeft: 0 }}>
             <i>“Don’t you owe me, like 15? Anyway, here.”</i>
           </p>
 
-          <p className="quote">
+          <p className="quote" style={{ marginLeft: 0 }}>
             <i>“Could I also borrow a light?”</i>
           </p>
 
