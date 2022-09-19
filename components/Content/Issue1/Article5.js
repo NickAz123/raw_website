@@ -5,9 +5,7 @@ import styles from "../Content.module.css";
 function Article5() {
   return (
     <div className={styles.articleContainer}>
-      <div className={styles.articleImgContainer}>
-        <img src="/Season1/Issue1/issue_1_article_1_img.png"></img>
-      </div>
+      <div className={styles.articleImgContainer}></div>
       <div className={styles.articleContent}>
         <h3>PHOTO BY KURT SERRANO</h3>
         <div className={styles.articleCredits}>

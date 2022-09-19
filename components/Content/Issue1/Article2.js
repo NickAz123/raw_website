@@ -86,7 +86,7 @@ function Article2() {
             sort of unspoken rule that I’m not aware about? Again, I don’t smoke
             or anything so I don’t really know how expensive or inexpensive
             cigarettes could be. I just know that Canada doesn’t sell any
-            Marlboro Reds and that it's a <b>HOT</b> commodity around here.
+            Marlboro Reds and that it&apos;s a <b>HOT</b> commodity around here.
           </p>
 
           <p>

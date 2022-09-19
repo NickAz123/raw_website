@@ -44,7 +44,7 @@ function Article1() {
             excellent value.
           </p>
           <p>So allow us to introduce ourselves.</p>
-          <h2>What’s RAW?</h2>
+          <h2>What&apos;s RAW?</h2>
           <p>
             <b>We’re an outlet; we’re a break from our full-time jobs,</b>
             focusing mostly on graphic design and writing. The reason why RAW is
