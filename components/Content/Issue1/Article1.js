@@ -37,11 +37,11 @@ function Article1() {
             </a>
           </p>
           <p>
-            An update since the last newsletter, what you're looking at is an
-            entirely different version of how you first saw us. Observing from a
-            different outlook, it only felt natural to think of Random-Ass
-            Wednesday, aka RAW, as something with promise, intention, and more
-            excellent value.
+            An update since the last newsletter, what you&apos;re looking at is
+            an entirely different version of how you first saw us. Observing
+            from a different outlook, it only felt natural to think of
+            Random-Ass Wednesday, aka RAW, as something with promise, intention,
+            and more excellent value.
           </p>
           <p>So allow us to introduce ourselves.</p>
           <h2>What&apos;s RAW?</h2>
