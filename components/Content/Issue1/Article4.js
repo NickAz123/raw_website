@@ -90,7 +90,7 @@ function Article4() {
             Council for Interior Design Qualification) put it perfectly.
           </p>
 
-          <p className="quote">
+          <p className={styles.articleQuote}>
             “Interior design is the art and science of understanding people’s
             behavior to create functional spaces within a building. The
             decoration is the furnishing or adorning of a space with fashionable

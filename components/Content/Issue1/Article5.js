@@ -12,7 +12,7 @@ function Article5() {
           <h4>Rico Reyes</h4>
           <h5>SEP-30-2022</h5>
         </div>
-        <h1 style={{ color: "#F30B0B" }}>A Reminder About The Seasons</h1>
+        <h1>A Reminder About The Seasons</h1>
         <div className={styles.articleText}>
           <p>
             <i>
@@ -27,7 +27,7 @@ function Article5() {
               </b>
             </i>
           </p>
-          <p style={{ textAlign: "center", color: "#F30B0B" }}>
+          <p>
             <b>Taken from my notes dated August 3, 2022</b>
           </p>
           <p>
