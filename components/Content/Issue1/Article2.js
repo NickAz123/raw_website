@@ -12,7 +12,9 @@ function Article2() {
         <div className={styles.img}>
           <Image src={headerPhoto} alt="Cigarette Courtesy" priority />
         </div>
-
+        <div className={styles.mobileImg}>
+          <Image src={mobilePhoto} alt="RANDOM-ASS WEDNESDAYS" priority />
+        </div>
         <div className={styles.mobileImg}></div>
       </div>
       <div className={styles.articleContent}>
