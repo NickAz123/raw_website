@@ -1,11 +1,23 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
+import Image from "next/image";
+
+import headerPhoto from "../../../public/issue1/issue_1_article_5_img.JPG";
+
 import styles from "../Content.module.css";
 
 function Article5() {
   return (
     <div className={styles.articleContainer}>
-      <div className={styles.articleImgContainer}></div>
+      <div className={styles.articleImgContainer}>
+        <div className={styles.img}>
+          <Image
+            src={headerPhoto}
+            alt="A Reminder About The Seasons"
+            priority
+          />
+        </div>
+      </div>
       <div className={styles.articleContent}>
         <h3>PHOTO BY KURT SERRANO</h3>
         <div className={styles.articleCredits}>
