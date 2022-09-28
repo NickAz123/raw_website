@@ -26,6 +26,10 @@ function Navbar(props) {
     setIsAboutOpen(false);
   };
 
+  const getArticleName = (array, id) => {
+    return array.find((v) => v.id === id).title;
+  };
+
   useClickOutside(ref, () => setNavDisplay(false));
 
   return (
@@ -43,7 +47,9 @@ function Navbar(props) {
             >
               <span className={styles.seasonSpan}>SEASON 1 - </span>
               <span>
-                <b className={styles.issueBold}>ISSUE 1</b>
+                <b className={styles.articleBold}>
+                  {getArticleName(props.articles, props.currentArticle)}
+                </b>
               </span>
             </button>
             {navDisplay === true && (
