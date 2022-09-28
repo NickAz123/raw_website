@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useClickOutside } from "../Helpers.js";
 import Image from "next/image";
 
@@ -10,8 +9,6 @@ import styles from "./Navbar.module.css";
 function Navbar(props) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
-
-  let selectedArticleTitle;
 
   const changeArticle = (
     id,
@@ -26,6 +23,7 @@ function Navbar(props) {
 
     setCurrentArticle(id);
     setIsAboutOpen(false);
+    setTimeout(() => setNavDisplay(false), 75);
   };
 
   const getArticleName = (array, id) => {
