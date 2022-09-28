@@ -26,6 +26,15 @@
 }
 .logoDiv{
     width: 150px;
+    position: absolute;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    left: 0;
+    right: 0;
+
+    top: 15px;
 }
 
 .navImg{
@@ -45,7 +54,7 @@
     background: none;
     border-radius: 5px;
     font-size: 20px;
-    width: 250px;
+    width: max-content;
     height: 57px;
     padding-left:1.5rem;
     padding-right:1.5rem;
@@ -85,7 +94,7 @@
     padding-top: 1rem;
     padding-bottom: 2rem;
     border-radius: 5px;
-    width: 250px;
+    width: 100%;
 
     background-color: white;
     color: black;
