@@ -11,12 +11,8 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [currentIssue, setCurrentIssue] = useState(content["Issue1"]);
-  const [currentArticle, setCurrentArticle] = useState();
+  const [currentArticle, setCurrentArticle] = useState(1);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
-
-  useEffect(() => {
-    setCurrentArticle(1);
-  }, []);
 
   return (
     <div className={styles.container}>
