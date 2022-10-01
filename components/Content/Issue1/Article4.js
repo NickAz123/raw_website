@@ -27,7 +27,7 @@ function Article4() {
               target="_blank"
               rel="noreferrer"
             >
-              <b>
+              <b className="listen" style={{ color: "#FF7A00" }}>
                 <i>LISTEN</i>
               </b>
             </a>

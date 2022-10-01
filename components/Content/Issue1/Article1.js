@@ -31,7 +31,7 @@ function Article1() {
               target="_blank"
               rel="noreferrer"
             >
-              <b>
+              <b className="listen">
                 <i>LISTEN</i>
               </b>
             </a>

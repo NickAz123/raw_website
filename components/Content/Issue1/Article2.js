@@ -31,15 +31,8 @@ function Article2() {
               target="_blank"
               rel="noreferrer"
             >
-              <b
-                className={styles.boldedListen}
-                style={{
-                  textDecoration: "underline",
-                  fontFamily: "HelveticaTitle",
-                  fontWeight: 200,
-                }}
-              >
-                To listen to while reading
+              <b className="listen">
+                <i>LISTEN</i>
               </b>
             </a>
           </p>

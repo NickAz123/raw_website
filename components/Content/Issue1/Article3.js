@@ -20,24 +20,6 @@ function Article3() {
       </div>
       <div className={styles.articleContent}>
         <h3>PHOTO BY KURT SERRANO</h3>
-
-        <h1>Prelude</h1>
-        <div className={styles.articleText}>
-          <p>
-            What you’re about to read is one of the five newsletters of our
-            first issue of season 1. First, we would like to thank you for even
-            taking the time to click the link and start reading. We put our
-            entire heart and soul into this project and we cannot wait to show
-            everyone the results of our hard work. Lastly if you find yourself
-            thoroughly enjoying it as you read through,
-            <i>
-              &nbsp;please don’t hesitate to tell your friends and family about
-              us.
-            </i>
-          </p>
-          <p>Here’s Breakdown of a Breakdown.</p>
-        </div>
-        <hr className={styles.lineBreak} />
         <div className={styles.articleCredits}>
           <h4>Rico Reyes</h4>
           <h5>AUG-27-2022</h5>
@@ -50,16 +32,7 @@ function Article3() {
               target="_blank"
               rel="noreferrer"
             >
-              <b
-                className={styles.boldedListen}
-                style={{
-                  textDecoration: "underline",
-                  fontFamily: "HelveticaTitle",
-                  fontWeight: 200,
-                }}
-              >
-                To listen to while reading
-              </b>
+              <b className="listen">LISTEN</b>
             </a>
           </p>
           <p>
@@ -139,7 +112,7 @@ function Article3() {
             a nice pocket of cooks and chefs with incredible taste. You can see
             Carmy’s work uniform starting with his Birkenstock Tokio Super Grips
             paired with not just any white t-shirt, but it’s gotta be either{" "}
-            <b>Velva Sheen, Shwanen, or Whitesville</b> noticing that Carmy’s
+            <b> Velva Sheen, Shwanen, or Whitesville</b> noticing that Carmy’s
             t-shirt had a tubular fit on it. We’re talking $300 in work
             uniforms.
           </p>

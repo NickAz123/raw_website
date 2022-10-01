@@ -24,9 +24,9 @@ function Article5() {
           <h4>Rico Reyes</h4>
           <h5>SEP-30-2022</h5>
         </div>
-        <h1>A Reminder About The Seasons</h1>
+        <h1 class="primary-color">A Reminder About The Seasons</h1>
         <div className={styles.articleText}>
-          <p>
+          <p class="primary-color">
             <i>
               “I had a dream last night where I left my car in the middle of an
               empty intersection to drop some food at a friend’s place. I got
@@ -41,6 +41,17 @@ function Article5() {
           </p>
           <p>
             <b>Taken from my notes dated August 3, 2022</b>
+          </p>
+          <p>
+            <a
+              href="https://open.spotify.com/track/34z73xy5s6Z744AYg61zVP?si=6c812bbe86664d9d"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b className="listen">
+                <i>LISTEN</i>
+              </b>
+            </a>
           </p>
           <p>
             Reading it now, it’s not that deep. But reading it then, I remember
@@ -75,7 +86,7 @@ function Article5() {
           </p>
           <p>
             The point is,{" "}
-            <b>anticipate the change and embrace it when it comes.</b>
+            <b>anticipate the change and embrace it when it comes. </b>
             But look forward to the best that is yet to come, whatever that may
             be. Seasons may change, yes. Just like our interests, passions, or
             ambitions. But purpose and happiness can be found even in the
