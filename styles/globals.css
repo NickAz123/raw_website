@@ -7,6 +7,11 @@
   src: url('../public/fonts/BookmaniaLight.otf');
 }
 
+@font-face {
+  font-family: 'HelveticaLight';
+  src: url('../public/fonts/HelveticaNeue-Light.ttf');
+}
+
 html,
 body {
   padding: 0;

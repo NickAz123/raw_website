@@ -27,7 +27,7 @@ function Article1() {
           <p>Except that we&apos;re trying to get serious.</p>
           <p>
             <a
-              href="https://open.spotify.com/track/41vSsnP46DpUZC0YoNyk3U?si=1e73fc5d0d1a4454"
+              href="https://open.spotify.com/track/2PvkmAPAOMYdRU5DDmFaxV?si=dd6b005e54ff4129"
               target="_blank"
               rel="noreferrer"
             >
@@ -37,11 +37,11 @@ function Article1() {
             </a>
           </p>
           <p>
-            An update since the last newsletter, what you&apos;re looking at is
-            an entirely different version of how you first saw us. Observing
-            from a different outlook, it only felt natural to think of
-            Random-Ass Wednesday, aka RAW, as something with promise, intention,
-            and more excellent value.
+            An update since the last newsletter, what you’re looking at is an
+            entirely different version of how you first saw us. Observing from a
+            different outlook, it only felt natural to think of Random-Ass
+            Wednesday, aka RAW, as something with promise, intention, and more
+            excellent value.{""}
           </p>
           <p>So allow us to introduce ourselves.</p>
           <h2>What&apos;s RAW?</h2>
@@ -78,7 +78,7 @@ function Article1() {
           </p>
           <p>To those who got this far, thank you.</p>
           <p>This is Season 1.</p>
-          <p>With respect, </p>
+          <p>Signing off, </p>
           <p>Random Ass Wednesday</p>
         </div>
       </div>

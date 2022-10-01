@@ -64,6 +64,7 @@
     text-align: left;
     text-decoration: underline;
     text-underline-offset: 6px;
+    cursor: pointer;
 
     color: var(--navbarText);
 }
@@ -108,6 +109,7 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 
+    cursor: pointer;
     border: none;
     background: none;
     text-align: left;
