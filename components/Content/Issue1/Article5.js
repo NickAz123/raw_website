@@ -24,9 +24,9 @@ function Article5() {
           <h4>Rico Reyes</h4>
           <h5>SEP-30-2022</h5>
         </div>
-        <h1 class="primary-color">A Reminder About The Seasons</h1>
+        <h1 className="primary-color">A Reminder About The Seasons</h1>
         <div className={styles.articleText}>
-          <p class="primary-color">
+          <p className="primary-color">
             <i>
               “I had a dream last night where I left my car in the middle of an
               empty intersection to drop some food at a friend’s place. I got
