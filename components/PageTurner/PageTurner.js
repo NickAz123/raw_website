@@ -19,9 +19,9 @@ function PageTurner(props) {
       return currentIssue["Articles"][currentId]["title"];
     } else {
       if (next) {
-        return currentIssue["Articles"]["title"];
+        return currentIssue["Articles"][currentId]["title"];
       } else {
-        return currentIssue["Articles"]["title"];
+        return currentIssue["Articles"][currentId - 1]["title"];
       }
     }
   };
@@ -38,54 +38,63 @@ function PageTurner(props) {
 
   return (
     <div className={styles.pageTurnerContainer}>
-      <div
-        className={`${styles.sideBtn} ${
-          arrayId === 0 ? `${styles.btnDisabled}` : ""
-        }`}
-        onClick={() => changeArticle(props.currentArticle, false)}
-      >
-        <div className={styles.sideBtnArrow}>
-          <FontAwesomeIcon
-            icon={faAngleLeft}
-            style={{
-              fontSize: 36,
-              color: "black",
-            }}
-          />
-        </div>
+      {arrayId !== 1 && (
+        <div
+          className={`${styles.sideBtn} ${
+            arrayId === 0 ? `${styles.btnDisabled}` : ""
+          }`}
+          onClick={() =>
+            changeArticle(props.currentArticle, false, props.setCurrentArticle)
+          }
+        >
+          <div className={styles.sideBtnArrow}>
+            <FontAwesomeIcon
+              icon={faAngleLeft}
+              style={{
+                fontSize: 36,
+                color: "black",
+              }}
+            />
+          </div>
 
-        <div className={styles.sideBtnName}>
-          {getNextArticleName(
-            arrayId,
-            false,
-            arrayId === 0 ? true : false,
-            props.currentIssue
-          )}
+          <div className={styles.sideBtnName}>
+            {getNextArticleName(
+              arrayId - 1,
+              false,
+              arrayId === 0 ? true : false,
+              props.currentIssue
+            )}
+          </div>
         </div>
-      </div>
-      <div
-        className={`${styles.sideBtn} ${
-          arrayId === totalArticles - 1 ? `${styles.btnDisabled}` : ""
-        }`}
-        onClick={() =>
-          changeArticle(props.currentArticle, true, props.setCurrentArticle)
-        }
-      >
-        <div className={styles.sideBtnName}>
-          {getNextArticleName(
-            arrayId,
-            true,
-            arrayId === totalArticles - 1 ? true : false,
-            props.currentIssue
-          )}
-        </div>
-        <div className={styles.sideBtnArrow}>
-          <FontAwesomeIcon
-            icon={faAngleRight}
-            style={{ fontSize: 36, color: "black" }}
-          />
-        </div>
-      </div>
+      )}
+
+      {arrayId !== totalArticles && (
+        <>
+          <div
+            className={`${styles.sideBtn} ${
+              arrayId === totalArticles ? `${styles.btnDisabled}` : ""
+            }`}
+            onClick={() =>
+              changeArticle(props.currentArticle, true, props.setCurrentArticle)
+            }
+          >
+            <div className={styles.sideBtnName}>
+              {getNextArticleName(
+                arrayId,
+                true,
+                arrayId === totalArticles - 1 ? true : false,
+                props.currentIssue
+              )}
+            </div>
+            <div className={styles.sideBtnArrow}>
+              <FontAwesomeIcon
+                icon={faAngleRight}
+                style={{ fontSize: 36, color: "black" }}
+              />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
