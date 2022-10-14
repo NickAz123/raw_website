@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import headerPhoto from "../../../public/issue1/issue_1_article_4_img.JPG";
+import mobilePhoto from "../../../public/issue1/issue_1_article_4_mobile_img.JPG";
 
 import styles from "../Content.module.css";
 
@@ -11,6 +12,9 @@ function Article4() {
       <div className={styles.articleImgContainer}>
         <div className={styles.img}>
           <Image src={headerPhoto} alt="I Hate Orange" priority />
+        </div>
+        <div className={styles.mobileImg}>
+          <Image src={mobilePhoto} alt="I Hate Orange" priority />
         </div>
       </div>
       <div className={styles.articleContent}>

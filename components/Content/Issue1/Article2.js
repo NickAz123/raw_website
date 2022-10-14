@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../Content.module.css";
 
 import headerPhoto from "../../../public/issue1/issue_1_article_2_img.png";
-import mobilePhoto from "../../../public/issue1/about_us_mobile_img.JPG";
+import mobilePhoto from "../../../public/issue1/issue_1_article_2_mobile_img.JPG";
 
 function Article2() {
   return (
