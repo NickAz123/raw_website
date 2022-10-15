@@ -9,6 +9,7 @@ import spotifyRedLogo from "../../public/social/spotify-logo-red.svg";
 import akonImg from "../../public/akon-logo.svg";
 
 import styles from "./Menu.module.css";
+import { faShuttleSpace } from "@fortawesome/free-solid-svg-icons";
 
 function Menu(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -99,6 +100,9 @@ function Menu(props) {
               </div>
             </button>
           </a>
+        </div>
+        <div className={styles.version}>
+          <h2 className={styles.versionTxt}>v1.1</h2>
         </div>
       </div>
       <div
