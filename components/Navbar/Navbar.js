@@ -1,5 +1,4 @@
-import React from "react";
-import { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useClickOutside } from "../Helpers.js";
 import Image from "next/image";
 
@@ -11,13 +10,24 @@ function Navbar(props) {
   const [navDisplay, setNavDisplay] = useState(false);
   const ref = useRef(null);
 
-  const changeArticle = (id) => {
-    if (id != props.currentArticle || props.isAboutOpen) {
+  const changeArticle = (
+    id,
+    setCurrentArticle,
+    setIsAboutOpen,
+    currentArticle,
+    isAboutOpen
+  ) => {
+    if (id != currentArticle || isAboutOpen) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    props.setCurrentArticle(id);
-    props.setIsAboutOpen(false);
+    setCurrentArticle(id);
+    setIsAboutOpen(false);
+    setTimeout(() => setNavDisplay(false), 75);
+  };
+
+  const getArticleName = (array, id) => {
+    return array.find((v) => v.id === id).title;
   };
 
   useClickOutside(ref, () => setNavDisplay(false));
@@ -35,11 +45,11 @@ function Navbar(props) {
               }
               onClick={() => setNavDisplay(!navDisplay)}
             >
-              <span className={styles.seasonSpan}>
-                {props.season.toUpperCase()} -{" "}
-              </span>
+              <span className={styles.seasonSpan}>SEASON 1 - </span>
               <span>
-                <b className={styles.issueBold}>{props.issue.toUpperCase()}</b>
+                <b className={styles.articleBold}>
+                  {getArticleName(props.articles, props.currentArticle)}
+                </b>
               </span>
             </button>
             {navDisplay === true && (
@@ -50,7 +60,15 @@ function Navbar(props) {
                       className={`${styles.dropdownItemsButton} ${
                         props.currentArticle === article.id ? styles.bold : ""
                       }`}
-                      onClick={() => changeArticle(article.id)}
+                      onClick={() =>
+                        changeArticle(
+                          article.id,
+                          props.setCurrentArticle,
+                          props.setIsAboutOpen,
+                          props.currentArticle,
+                          props.isAboutOpen
+                        )
+                      }
                       key={article.id}
                     >
                       {article.title}

@@ -50,7 +50,7 @@ function Menu(props) {
           className={styles.menuButton}
           onClick={() => buttonPress(false)}
         >
-          Issue 1
+          Season 1
         </button>
         <Link href="/archive">
           <button

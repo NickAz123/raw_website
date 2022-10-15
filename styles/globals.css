@@ -7,6 +7,11 @@
   src: url('../public/fonts/BookmaniaLight.otf');
 }
 
+@font-face {
+  font-family: 'HelveticaLight';
+  src: url('../public/fonts/HelveticaNeue-Light.ttf');
+}
+
 html,
 body {
   padding: 0;
@@ -21,6 +26,8 @@ body {
   --phonePortrait: 430px;
   --phoneLandscape: 900px;
 
+  --primaryColor: #F30B0B;
+
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 
@@ -32,11 +39,20 @@ body::-webkit-scrollbar {
 
 /*Article Titles*/
 h1{
-  margin: 0px;
+  margin: 0;
+  margin-top: 2.50rem;
+  margin-bottom: 2.50rem;
   font-size: 64px;
-  margin-bottom: 50px;
   font-family: HelveticaTitle;
   font-weight: 200;
+}
+h2{
+  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: HelveticaTitle;
+  font-weight: 200;
+  font-size: 30px;
 }
 /* Photo Credits */
 h3{
@@ -86,6 +102,28 @@ b{
   font-size: 22px;
   font-family: HelveticaTitle;
   font-weight: 200
+}
+
+.listen{
+  font-family: HelveticaTitle;
+  font-weight: 200;
+  color: var(--primaryColor);
+  font-style: italic;
+}
+
+.primary-color{
+  color: var(--primaryColor)
+}
+
+.quote{
+  font-family: HelveticaTitle;
+  color: var(--primaryColor);
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 

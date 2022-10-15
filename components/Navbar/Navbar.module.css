@@ -26,6 +26,15 @@
 }
 .logoDiv{
     width: 150px;
+    position: absolute;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    left: 0;
+    right: 0;
+
+    top: 15px;
 }
 
 .navImg{
@@ -45,7 +54,7 @@
     background: none;
     border-radius: 5px;
     font-size: 20px;
-    width: 250px;
+    width: max-content;
     height: 57px;
     padding-left:1.5rem;
     padding-right:1.5rem;
@@ -55,6 +64,7 @@
     text-align: left;
     text-decoration: underline;
     text-underline-offset: 6px;
+    cursor: pointer;
 
     color: var(--navbarText);
 }
@@ -85,7 +95,7 @@
     padding-top: 1rem;
     padding-bottom: 2rem;
     border-radius: 5px;
-    width: 250px;
+    width: 100%;
 
     background-color: white;
     color: black;
@@ -99,6 +109,7 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 
+    cursor: pointer;
     border: none;
     background: none;
     text-align: left;
@@ -108,7 +119,7 @@
 .bold{
     font-weight: 600;
 }
-.issueBold{
+.articleBold{
     font-size: 20px;
 }
 .dropdownItemsButton:hover {
@@ -179,7 +190,12 @@
     .issueBold{
         font-size: 17px;
     }
-  
+    .seasonSpan{
+        display: none;
+    }
+    .articleBold{
+    font-size: 16px;
+    }
 }
 @media (max-width: 900px) and (orientation: landscape){
     .navbar{
@@ -208,6 +224,9 @@
     }
     .issueBold{
         font-size: 17px;
+    }
+    .seasonSpan{
+        display: none;
     }
 }
 

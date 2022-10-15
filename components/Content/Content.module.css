@@ -49,7 +49,6 @@
 
 .articleCredits{
     font-family: HelveticaTitle;
-    margin-bottom: 15px;
     display: flex;
     justify-content: flex-start;
 }
@@ -68,15 +67,18 @@
 }
 
 .articleQuote {
+    font-family: HelveticaTitle;
     display: block;
     padding: 0.01em;
-    font-size: 45px;
+    font-size: 40px;
     color: #F30B0B;
     border-left: 5px solid #F30B0B;
     padding-left: 50px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     width: 90%;
+
+    line-height: 1.5;
 }
 
 .pMargin{
@@ -89,7 +91,7 @@
     margin-bottom: 120px;
 }
 
-.season1 {
+.seasonStyles {
     --primary: rgba(255,0,0,1);
     --textPrimary: white;
     --navbarText: white;
@@ -115,12 +117,18 @@
     .articleContent{
         max-width: 90% !important;
     }
+    .articleQuote {
+        font-size: 30px;
+    }
   
 }
 @media (max-width: 1200px) and (orientation: landscape){
  
     .articleContent{
         max-width: 80% !important;
+    }
+    .articleQuote {
+        font-size: 30px;
     }
 }
 
@@ -148,6 +156,9 @@
         display: none;
     }
     .boldedListen{
+        font-size: 20px;
+    }
+    .articleQuote {
         font-size: 20px;
     }
 }
@@ -178,6 +189,9 @@
         margin-bottom: 80px;
     }
     .boldedListen{
+        font-size: 20px;
+    }
+    .articleQuote {
         font-size: 20px;
     }
 }
