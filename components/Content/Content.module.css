@@ -35,7 +35,7 @@
     letter-spacing: -.25px;
     max-width: 67%;
     margin-top: 25px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -116,6 +116,7 @@
     
     .articleContent{
         max-width: 90% !important;
+        margin-bottom: 50px;
     }
     .articleQuote {
         font-size: 30px;
@@ -126,6 +127,7 @@
  
     .articleContent{
         max-width: 80% !important;
+        margin-bottom: 50px;
     }
     .articleQuote {
         font-size: 30px;
@@ -136,8 +138,10 @@
 @media (max-width: 430px) and (orientation: portrait){
     .articleContent{
         max-width: 100% !important;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        margin-bottom: 25px;
     }
     .articleAuthor{
         font-size: 15px;

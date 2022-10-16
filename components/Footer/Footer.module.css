@@ -4,10 +4,10 @@
   justify-content: space-around;
   background-color: #1E1E1E;
   color: white;
-  padding-top: 6em;
+  padding-top: 5em;
   padding-left: 4em;
   padding-right: 4em;
-  padding-bottom: 6em;
+  padding-bottom: 5em;
 
   font-family: HelveticaTitle;
 }
@@ -117,8 +117,7 @@
 @media (max-width: 430px) and (orientation: portrait){
   .footer{
     flex-direction: column;
-    padding: 50px;
-    padding-bottom: 70px;
+    padding: 40px;
   }
   .footerImg{
     width: 110px;
@@ -149,6 +148,9 @@
 }
 
 @media (max-width: 900px) and (orientation: landscape){
+  .footer{
+    padding: 40px;
+  }
   .footerImg{
     width: 110px;
     margin-top: 10px;

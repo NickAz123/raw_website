@@ -85,7 +85,7 @@ function Article5() {
           </p>
           <p>
             And while there’s an obvious line between being passive and
-            proactive, I don’t think that being passive is a bad thing entirely.
+            proactive, I don’t think that being passive is entirely a bad thing.
             Sometimes you’ve got to let life run its course. Like anything, we
             grow as we learn. So with the highest of highs comes the lowest of
             lows, and I’m just trying to anticipate the drop a little bit more.
