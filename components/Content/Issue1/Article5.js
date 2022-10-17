@@ -31,7 +31,7 @@ function Article5() {
           <h4>Rico Reyes</h4>
           <h5>SEP-30-2022</h5>
         </div>
-        <h1 className="primary-color">A Reminder About The Seasons</h1>
+        <h1>A Reminder About The Seasons</h1>
         <div className={styles.articleText}>
           <p className="primary-color">
             <i>
