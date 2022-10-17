@@ -31,7 +31,7 @@ function Article5() {
           <h4>Rico Reyes</h4>
           <h5>SEP-30-2022</h5>
         </div>
-        <h1 className="primary-color">A Reminder About The Seasons</h1>
+        <h1>A Reminder About The Seasons</h1>
         <div className={styles.articleText}>
           <p className="primary-color">
             <i>
@@ -85,7 +85,7 @@ function Article5() {
           </p>
           <p>
             And while there’s an obvious line between being passive and
-            proactive, I don’t think that being passive is a bad thing entirely.
+            proactive, I don’t think that being passive is entirely a bad thing.
             Sometimes you’ve got to let life run its course. Like anything, we
             grow as we learn. So with the highest of highs comes the lowest of
             lows, and I’m just trying to anticipate the drop a little bit more.

@@ -1,15 +1,15 @@
 .pageTurnerContainer{
     height: 30px;
-    max-width: 70%;
+    max-width: 100%;
     padding: 50px;
-    padding-top: 130px;
+    /* padding-top: 130px; */
     padding-bottom: 120px;
 
     display: flex;
     justify-content: space-between;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
 
 }
 
@@ -39,4 +39,62 @@
 .btnDisabled{
     pointer-events: none;
     opacity: 0.3;
+}
+
+/* Tablet Styling */
+@media (max-width: 900px) and (orientation: portrait){
+    
+    .pageTurnerContainer{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .sideBtnName{
+        display: none;
+    }
+  
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    
+    .pageTurnerContainer{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .sideBtnName{
+        display: none;
+    }
+    
+}
+
+/* Mobile Styling */
+@media (max-width: 600px) and (orientation: portrait){
+    
+    .pageTurnerContainer{
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+        height: 20px;
+    }
+
+    .sideBtnName{
+        display: none;
+    }
+  
+}
+@media (max-width: 900px) and (orientation: landscape){
+    
+    .pageTurnerContainer{
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+        height: 20px;
+    }
+
+    .sideBtnName{
+        display: none;
+    }
+  
 }

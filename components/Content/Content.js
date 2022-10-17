@@ -15,11 +15,11 @@ function Content(props) {
         <Issue1 articleid={props.currentArticle} />
       )}
       {props.isAboutOpen && <About />}
-      {/* <PageTurner
+      <PageTurner
         currentIssue={props.currentIssue}
         currentArticle={props.currentArticle}
         setCurrentArticle={props.setCurrentArticle}
-      /> */}
+      />
       <Footer
         isAboutOpen={props.isAboutOpen}
         setIsAboutOpen={props.setIsAboutOpen}

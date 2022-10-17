@@ -1,6 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleLeft,
+  faAngleRight,
+  faShuttleSpace,
+} from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./PageTurner.module.css";
 
@@ -67,6 +71,7 @@ function PageTurner(props) {
           </div>
         </div>
       )}
+      {arrayId === 1 && <div className={styles.turnerFiller}></div>}
 
       {arrayId !== totalArticles && (
         <>
@@ -95,6 +100,7 @@ function PageTurner(props) {
           </div>
         </>
       )}
+      {arrayId === totalArticles && <div className={styles.turnerFiller}></div>}
     </div>
   );
 }

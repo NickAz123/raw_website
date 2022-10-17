@@ -146,6 +146,19 @@
     transform: rotate(-45deg) translate(2px, -4px);
 }
 
+.version{
+    color: var(--primaryColor);
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+
+    font-size: 5px !important;
+}
+
+.versionTxt{
+    font-size: 15px;
+}
+
 @keyframes slideIn{
     0%{
         transform: translateX(100%);

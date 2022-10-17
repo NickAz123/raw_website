@@ -141,24 +141,6 @@ function Article4() {
           <p>
             I could ramble on and on about how much I love the concept of
             designing as a whole but let me just leave you with something I’ve
-            learned overtime;
-          </p>
-
-          <p>
-            Don’t be afraid to create a space that is meaningful to you. Clean
-            your kitchen, play your favorite songs (or just leave it quiet),
-            rearrange your room or go for a nice walk, it’s all up to you. These
-            tasks are so fun and bring waves of refreshment, but the real weight
-            of creating space for a life that is meaningful to you all comes
-            down to your very own consumption; who and what you listen to,
-            surround yourself with, and invest in. Be intentional with the
-            things you let in your home and in your mind. It all starts from
-            there.
-          </p>
-
-          <p>
-            I could ramble on and on about how much I love the concept of
-            designing as a whole but let me just leave you with something I’ve
             learned overtime;{" "}
           </p>
 
