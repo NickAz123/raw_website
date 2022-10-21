@@ -15,6 +15,8 @@ function Menu(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menu = useRef(null);
 
+  const versionNumber = "v1.11";
+
   const openBurger = (state, ref) => {
     setIsMenuOpen(!state);
     animateBurger(state, ref);
@@ -102,7 +104,7 @@ function Menu(props) {
           </a>
         </div>
         <div className={styles.version}>
-          <h2 className={styles.versionTxt}>v1.1</h2>
+          <h2 className={styles.versionTxt}>{versionNumber}</h2>
         </div>
       </div>
       <div
