@@ -1,3 +1,6 @@
+***WARNING***
+**This website is in the process of being archived, and moved into a legacy status, as we work to rebuild a new platform from scratch. At the launch of season 2, this repo will be depreciated, and the new platform moved over to original domain**
+
 # Random Ass Wednesdays
 
 Random Ass Wednesdays (RAW), is a blog/content website that serves as a creative outlet for its owners. It will feature monthly content, letters and writing covering a variety of essentially random topics. Conceptualized by Rico Reyes and graphics designer Kurt Serrano, they spearhead a team of copywrites and developers who build and contribute to the website. It is completely mobile responsive.
